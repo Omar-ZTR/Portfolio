@@ -16,9 +16,9 @@ const About = () => {
                     <Info/>
 
                     <p className="about__description">
-                        Frontend developer, I create web pages with UI / UX user 
-                        interface, I have years of experience and many 
-                        clients are happy with the projects carried out.
+                    I am a highly motivated individual with a genuine passion for web application development. 
+                    I possess strong analytical skills, meticulous attention to detail, and a disciplined work ethic. 
+                    I am eager to deepen my technical and psychological knowledge and open to any opportunity that allows me to do so.
                     </p>
                     <a download="" href={CV} className="button button--flex">
                         Download CV
