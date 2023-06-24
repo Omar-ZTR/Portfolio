@@ -1,6 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import './service.css'
+import mongo from "../../asset/mongo.png";
+import js from "../../asset/js.png";
+import jequery from "../../asset/jequery.png";
+import word from "../../asset/word.png";
+import fire from "../../asset/fire.png";
+import uml from "../../asset/uml.png";
+import git from "../../asset/git.png";
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
 
@@ -44,7 +51,7 @@ const Services = () => {
                                     companies.
                                 </p>
 
-                                <ul className="services__modal-services grid">
+                                {/* <ul className="services__modal-services grid">
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">I develop the user interface.</p>                                   
@@ -79,7 +86,31 @@ const Services = () => {
                                     </li>
 
 
-                                </ul>
+                                </ul> */}
+
+                                <div className="grid-wrapper">
+                                    <div>
+                                        <img src={git} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={jequery} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={js} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={mongo} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={uml} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={fire} alt="" />
+                                    </div>
+                                    <div>
+                                        <img src={word} alt="" />
+                                    </div>
+                                </div>
                     
                             </div>
                         </div>
