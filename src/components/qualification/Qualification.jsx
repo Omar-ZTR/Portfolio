@@ -8,7 +8,7 @@ const Qualification = () => {
     setToggleState(index);
   };
 
-  return (
+  return (<div> 
     <section className="qualification section" id="portfolio">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personel journey</span>
@@ -137,7 +137,7 @@ const Qualification = () => {
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
                   July 2023
-                                  </div>
+                </div>
               </div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -157,7 +157,7 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title"> End of study project </h3>
                 <span className="qualification__subtitle">
-                 
+
                   web developer
                 </span>
                 <span className="qualification__subtitle">G-Dev sousse</span>
@@ -169,11 +169,11 @@ const Qualification = () => {
             </div>
 
             <div className="qualification__data">
-              
+
 
               <div>
                 <h3 className="qualification__title">
-                   internship
+                  internship
                 </h3>
                 <span className="qualification__subtitle">web developer(frontend)</span>
                 <span className="qualification__subtitle">G-Dev sousse</span>
@@ -192,6 +192,7 @@ const Qualification = () => {
         </div>
       </div>
     </section>
+  </div>
   );
 };
 

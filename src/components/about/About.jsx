@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css";
-import AboutImg from "../../asset/omr.jpg";
+import AboutImg from "../../asset/sa.png";
 import CV from "../../asset/John-Cv.pdf";
 import Info from './Info';
 
@@ -11,12 +11,11 @@ const About = () => {
             <span className="section__subtitle">My introduction</span>
 
             <div className="about__container container grid">
-                <img src={AboutImg} alt="" className="about__img" />
                 <div className="about__data">
-                    <Info/>
+                    
 
                     <p className="about__description">
-                    I am a highly motivated individual with a genuine passion for web application development. 
+                    <span className='tagss'>&lt;</span>P<span className='tagss'>&gt;</span>I am a highly motivated individual with a genuine passion for web application development. 
                     I possess strong analytical skills, meticulous attention to detail, and a disciplined work ethic. 
                     I am eager to deepen my technical and psychological knowledge and open to any opportunity that allows me to do so.
                     </p>
@@ -49,6 +48,8 @@ const About = () => {
               </svg>
                     </a>
                 </div>
+                <img src={AboutImg} alt="" className="about__img" />
+                <Info/>
             </div>
         </section>
     )

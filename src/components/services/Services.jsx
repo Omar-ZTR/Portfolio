@@ -19,7 +19,7 @@ const Services = () => {
 
 
 
-    return (
+    return (<div> 
         <section className="services section" id="services">
             <h2 className="section__title">Services</h2>
             <span className="section__subtitle">What i offer</span>
@@ -247,7 +247,7 @@ const Services = () => {
                         </div>
                 </div>
             </div>
-        </section>
+        </section></div>
     )
 }
 
