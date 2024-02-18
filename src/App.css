@@ -181,7 +181,7 @@ textarea {
 body {
   /* background: -webkit-linear-gradient(to Bottom, #fb9a6a, #e2e2e2)
    Chrome 10-25, Safari 5.1-6; */
-background-image: radial-gradient(circle, #fc8b53af, #e2e2e2);
+background-image: radial-gradient(circle, #ffc7abaf, #e2e2e2);
   background-attachment: fixed;
   color: var(--text-color);
 }
@@ -211,7 +211,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.ss{
+  display: block;
+}
+.gridd{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+ 
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding:2rem;

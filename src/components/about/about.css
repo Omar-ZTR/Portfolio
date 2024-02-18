@@ -38,6 +38,7 @@ border-radius: 1rem;
  background-color: rgb(13, 24, 57);
  padding: 2rem;
  margin-top: -1rem;
+ clip-path: polygon(66% 0, 80% 13%, 100% 14%, 100% 100%, 0 100%, 0 51%, 0 0);
 }
 .about__info {
     grid-template-rows: repeat(3, 140px);

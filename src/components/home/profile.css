@@ -1,0 +1,287 @@
+.dsa{
+    width: 99%;
+    height: 99%;
+    margin-top: -10px;
+    align-items: center;
+    background-color: #00000003;
+    position: fixed;
+    border: #5b5b5b double 6px;
+border-radius: 1rem;
+
+}
+
+.profily {
+    /* border: ridge black 2px; */
+    top: 15%;
+    width: 100%;
+    height: 80vh;
+    clip-path: polygon(70% 0, 80% 7%, 100% 7% , 100% 100%, 0 100%, 0 0) ;
+    filter: url('#flt_tag');
+    /* border: double black 4px; */
+    position: sticky;
+    padding-top: 4%;
+    
+    /* border-radius: 1rem;  */
+    background-color: rgb(245, 244, 244);
+filter: drop-shadow (0 50px 100px -20px rgba(45, 45, 46, 0.25),0 30px 60px -30px rgba(255, 0, 0, 0.3),inset 0 -2px 6px 0 rgba(10,37,64,.35));
+
+    margin: auto 20px;
+
+    animation: profil 3s;
+    animation-delay: 0.4s;
+}
+
+
+.flt_svg {
+    visibility: hidden; 
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: #000000 double 2px;
+}
+
+.box_parent
+{
+    filter: url('#flt_tag');
+}
+.profily .ds-top {
+    position: absolute;
+border-radius:  1rem;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 99%;
+    height: 110px;
+    background: crimson;
+    animation: dsTop 1.5s;
+}
+
+.profily .avatar-holder {
+    position: relative;
+    margin: 1px auto;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #151515,
+        inset 0 0 0 5px #000000,
+        inset 0 0 0 5px #000000,
+        inset 0 0 0 5px #000000,
+        inset 0 0 0 5px #000000;
+    background: white;
+    overflow: hidden;
+    animation: mvTop 1.5s;
+}
+
+.profily .avatar-holder img {
+    width: 200%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.profily .name {
+    position: relative;
+
+
+
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+
+
+.profily .ds-info {
+    position: relative;
+    margin: 0 auto;
+
+    /* background-color: aliceblue; */
+    /* top: 120px; */
+
+    width: max-content;
+    height: 40px;
+    display: flex;
+}
+
+.profily .ds-info .pens,
+.profily .ds-info .projects,
+.profily .ds-info .posts {
+    position: relative;
+    left: -300px;
+    width: calc(250px / 3);
+    text-align: center;
+    color: white;
+    animation: fadeInMove 2s;
+    animation-fill-mode: forwards;
+}
+
+.profily .ds-info .pens h6,
+.profily .ds-info .projects h6,
+.profily .ds-info .posts h6 {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.profily .ds-info .pens p,
+.profily .ds-info .projects p,
+.profily .ds-info .posts p {
+    font-size: 12px;
+}
+
+.profily .ds-info .ds:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.profily .ds-info .ds:nth-of-type(1) {
+    animation-delay: 1s;
+}
+
+.profily .ds-skill {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    animation: mvBottom 1.5s;
+}
+
+.profily .ds-skill h6 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.profily .ds-skill .skill h6 {
+    font-weight: 400;
+    font-size: 8px;
+    letter-spacing: 0.05em;
+    margin: 4px 0;
+    color: white;
+}
+
+.profily .ds-skill .skill .fab {
+    color: crimson;
+    font-size: 14px;
+}
+
+.profily .ds-skill .skill .bar {
+    height: 5px;
+    background: crimson;
+    text-align: right;
+
+    /* p {
+        color: white;
+        font-size: 8px;
+        padding-top: 5px;
+        animation: fadeIn 5s;
+    } */
+}
+
+.profily .ds-skill .skill .bar:hover {
+    background: white;
+}
+
+.profily .ds-skill .skill .bar-html {
+    width: 95%;
+    animation: htmlSkill 1s;
+    animation-delay: 0.4s;
+}
+
+.profily .ds-skill .skill .bar-css {
+    width: 90%;
+    animation: cssSkill 2s;
+    animation-delay: 0.4s;
+}
+
+.profily .ds-skill .skill .bar-js {
+    width: 75%;
+    animation: jsSkill 3s;
+    animation-delay: initial;
+}
+
+@keyframes profil {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        left: -300px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes htmlSkill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes cssSkill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes jsSkill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes mvBottom {
+    0% {
+        bottom: -150px;
+    }
+
+    100% {
+        bottom: 10px;
+    }
+}
+
+@keyframes mvTop {
+    0% {
+        top: -150px;
+    }
+
+    100% {
+        top: 40
+    }
+}

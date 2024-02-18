@@ -6,8 +6,8 @@
     
     background: url(../../asset/layeree.svg);
     background-repeat: no-repeat;
-    mix-blend-mode: multiply;
-    box-shadow: 0px -143px 85px -6px rgba(255,255,255,1) inset;
+    /* mix-blend-mode: multiply; */
+    box-shadow: 0px -143px 85px -6px rgb(245, 139, 139) inset;
    right:  0;
     object-fit: cover;
    
