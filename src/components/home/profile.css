@@ -1,4 +1,4 @@
-.dsa{
+/* .dsa{
     width: 99%;
     height: 99%;
     margin-top: -10px;
@@ -6,26 +6,26 @@
     background-color: #00000003;
     position: fixed;
     border: #5b5b5b double 6px;
-border-radius: 1rem;
+    
 
-}
-
+} */
+@import "https://unpkg.com/open-props";
 .profily {
     /* border: ridge black 2px; */
     top: 15%;
     width: 100%;
     height: 80vh;
-    clip-path: polygon(70% 0, 80% 7%, 100% 7% , 100% 100%, 0 100%, 0 0) ;
-    filter: url('#flt_tag');
-    /* border: double black 4px; */
-    position: sticky;
-    padding-top: 4%;
-    
-    /* border-radius: 1rem;  */
-    background-color: rgb(245, 244, 244);
-filter: drop-shadow (0 50px 100px -20px rgba(45, 45, 46, 0.25),0 30px 60px -30px rgba(255, 0, 0, 0.3),inset 0 -2px 6px 0 rgba(10,37,64,.35));
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
 
-    margin: auto 20px;
+    position: sticky;
+    padding-top: 10%;
+
+
+
+    background-color: rgb(245, 244, 244);
+
+    /* margin: auto 20px; */
 
     animation: profil 3s;
     animation-delay: 0.4s;
@@ -33,20 +33,20 @@ filter: drop-shadow (0 50px 100px -20px rgba(45, 45, 46, 0.25),0 30px 60px -30px
 
 
 .flt_svg {
-    visibility: hidden; 
+    visibility: hidden;
     position: absolute;
     width: 0px;
     height: 0px;
     border: #000000 double 2px;
 }
 
-.box_parent
-{
+.box_parent {
     filter: url('#flt_tag');
 }
+
 .profily .ds-top {
     position: absolute;
-border-radius:  1rem;
+    border-radius: 1rem;
     margin: auto;
     top: 0;
     right: 0;
@@ -59,8 +59,8 @@ border-radius:  1rem;
 
 .profily .avatar-holder {
     position: relative;
-    margin: 1px auto;
-
+    margin: auto;
+   
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -85,52 +85,54 @@ border-radius:  1rem;
 
 
 
-    color: white;
+    color: rgb(1, 1, 1);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+    /* white-space: nowrap;  */
+    font-family: 'Dancing Script';
     text-align: center;
     animation: fadeIn 2s ease-in;
 }
 
 
+hr{
+    width: 70%;
 
+    margin:3px auto;
+}
 .profily .ds-info {
     position: relative;
     margin: 0 auto;
-
-    /* background-color: aliceblue; */
-    /* top: 120px; */
-
-    width: max-content;
-    height: 40px;
+    width:80%;
+    background-color: rgba(12, 74, 129, 0);
+  
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.profily .ds-info .pens,
-.profily .ds-info .projects,
-.profily .ds-info .posts {
+.profily .ds-info .ds-info-detail  {
     position: relative;
     left: -300px;
-    width: calc(250px / 3);
-    text-align: center;
-    color: white;
+    width:100%;
+ 
+    margin-bottom: var(--mb-0-25);
+    font-family: --body-font;
+ text-align: justify;
+    font-size:23px;
+    font-weight: 8rem;
+    color: rgb(47, 47, 47);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     animation: fadeInMove 2s;
     animation-fill-mode: forwards;
 }
 
-.profily .ds-info .pens h6,
-.profily .ds-info .projects h6,
-.profily .ds-info .posts h6 {
-    text-transform: uppercase;
-    color: crimson;
-}
 
-.profily .ds-info .pens p,
-.profily .ds-info .projects p,
-.profily .ds-info .posts p {
-    font-size: 12px;
-}
+
+
 
 .profily .ds-info .ds:nth-of-type(2) {
     animation-delay: 0.5s;
@@ -141,63 +143,79 @@ border-radius:  1rem;
 }
 
 .profily .ds-skill {
+    margin: 2.5%;
+    padding: 1% 0 0 2%;
     position: relative;
-    margin: auto;
-    width: 90%;
+    background: #e5e5e5;
+    display: flex;
+    box-shadow:
+    -50px -50px 0 -40px rgb(255, 106, 61),
+    50px 50px 0 -40px rgb(255, 106, 61);
+    flex-direction: column;
+    /* margin: auto; */
+    width: 95%;
+    border-radius: 1rem ;
+    
     animation: mvBottom 1.5s;
 }
 
 .profily .ds-skill h6 {
     margin-bottom: 5px;
-    font-weight: 700;
+    font-size:23px;
+    font-weight: 8rem;
+    font-family: --body-font;
+
     text-transform: uppercase;
     color: crimson;
 }
 
 .profily .ds-skill .skill h6 {
-    font-weight: 400;
-    font-size: 8px;
+    font-size:16px;
+    font-weight: 8rem;
+    font-family: --body-font;
     letter-spacing: 0.05em;
     margin: 4px 0;
-    color: white;
+    color: rgb(17, 17, 17);
 }
 
 .profily .ds-skill .skill .fab {
-    color: crimson;
+    color: #5831d8;
     font-size: 14px;
 }
 
 .profily .ds-skill .skill .bar {
     height: 5px;
-    background: crimson;
+    
+
+    background: #000000;
     text-align: right;
 
-    /* p {
-        color: white;
-        font-size: 8px;
+   
+}
+.profily .ds-skill .skill .bar p {
+        color: rgb(7, 7, 7);
+        font-size: 16px;
         padding-top: 5px;
         animation: fadeIn 5s;
-    } */
-}
-
+    }
 .profily .ds-skill .skill .bar:hover {
-    background: white;
+    background: rgb(5, 5, 5);
 }
 
 .profily .ds-skill .skill .bar-html {
-    width: 95%;
+    width: 80%;
     animation: htmlSkill 1s;
     animation-delay: 0.4s;
 }
 
 .profily .ds-skill .skill .bar-css {
-    width: 90%;
+    width: 75%;
     animation: cssSkill 2s;
     animation-delay: 0.4s;
 }
 
 .profily .ds-skill .skill .bar-js {
-    width: 75%;
+    width: 90%;
     animation: jsSkill 3s;
     animation-delay: initial;
 }
@@ -242,7 +260,7 @@ border-radius:  1rem;
     }
 
     100% {
-        width: 95%;
+        width: 80%;
     }
 }
 
@@ -252,7 +270,7 @@ border-radius:  1rem;
     }
 
     100% {
-        width: 90%;
+        width: 75%;
     }
 }
 
@@ -262,7 +280,7 @@ border-radius:  1rem;
     }
 
     100% {
-        width: 75%;
+        width: 90%;
     }
 }
 
@@ -285,3 +303,66 @@ border-radius:  1rem;
         top: 40
     }
 }
+
+.downCV {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    /* padding: 1.25rem 2rem; */
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    color: rgb(254, 254, 254);
+    background: #0c0808ed;
+    /* backdrop-filter: blur(10px); */
+    width: 50%;
+
+    padding: 6px ;
+    text-align: center;
+    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+    transition: transform 0.1s;
+    position: relative;
+    bottom: 10px;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  .downCV:hover {
+    --y: -10;
+    --scale: 1.1;
+    --border-scale: 1;
+  }
+  
+  .downCV:active {
+    --y: 5%;
+    --scale: 0.9;
+    --border-scale: 0.9, 0.8;
+  }
+  
+  .downCV:before {
+    content: "";
+    position: absolute;
+    inset: calc(var(--size-3) * -1);
+    border: var(--size-1) solid #d88d31 ;
+    box-shadow: 0px 10px 99px rgb(1, 1, 1);
+    transform: scale(var(--border-scale, 0));
+    transition: transform 0.125s;
+    
+    --angle-one: 105deg;
+    --angle-two: 290deg;
+    --spread-one: 30deg;
+    --spread-two: 40deg;
+    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+    
+    mask: conic-gradient(
+      transparent 0 var(--start-one),
+      rgb(5, 5, 5) var(--start-one) var(--end-one),
+      transparent var(--end-one) var(--start-two),
+      rgb(0, 0, 0) var(--start-two) var(--end-two),
+      transparent var(--end-two)
+    );
+    
+    z-index: -1;
+  }

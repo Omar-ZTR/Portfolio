@@ -1,59 +1,101 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import './backend.css'
+import html from "../../asset/html.png";
 
 const Backend = () => {
-  return (
-    <div className="skills__content">
-    <h3 className="skills__title">Backend developer</h3>
-    <div className="skills__box">
-        <div className="skills__group">
-            <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-                <div>
-                    <h3 className="skills__name">PHP</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-            </div>
+    const [isTransition, setTransition] = useState(false);
 
-            <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-                <div>
-                    <h3 className="skills__name">Node JS</h3>
-                    <span className="skills__level">Basic</span>
-                </div>
-            </div>
+    const handleskilClick = () => {
+        setTransition(!isTransition);
+    };
 
-            <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-                <div>
-                    <h3 className="skills__name">Python</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-            </div>
-
-        
-            <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-                <div>
-                    <h3 className="skills__name">MySQL</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-            </div>
-
-            <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-                <div>
-                    <h3 className="skills__name">Firebase</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-            </div>
-
-            
-            
+    return (
+        <div >
+            <ul className={`skil-stacks ${isTransition ? 'transition' : ''}`} onClick={handleskilClick}>
+                {/* <li classNameName="title">
+                    <h2>Expand to grid</h2>
+                </li> */}
+                <li className="stack stack-1">
+                    <ul className="skils-down">
+                        <li className="skil skil-1">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                        <li className="skil skil-2">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                        <li className="skil skil-3">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li className="stack stack-2">
+                    <ul className="skils-down">
+                        <li className="skil skil-1">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                        <li className="skil skil-2">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                        <li className="skil skil-3">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li className="stack stack-3">
+                    <ul className="skils-down">
+                        <li className="skil  skil-1 ">
+                            <div className='skills__data'>
+                                <div className="content ">
+                                    <img src={html} alt="hhh" />
+                                    <div className="line"></div>
+                                    <h3 className="skills__name">HTML</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="skil skil-2">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                        <li className="skil skil-3">
+                            <div className="content">
+                                <img src={html} alt="hhh" />
+                                <div className="line"></div>
+                                <h3 className="skills__name">HTML</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
         </div>
-
-    </div>
-</div>
-  )
+    )
 }
 
 export default Backend

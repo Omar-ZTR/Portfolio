@@ -8,20 +8,19 @@ const Qualification = () => {
     setToggleState(index);
   };
 
-  return (<div> 
-    <section className="qualification section" id="portfolio">
+  return (<div>
+    <section className="qualification container section" id="portfolio">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personel journey</span>
 
       <div className="qualification__container container">
-        <div className="qualification__tabs">
+      
+        <div className="qualification__sections">
           <div
-            className={
-              toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(1)}
+            className="qualification__content qualification__content-active"
+          >
+             <div
+            className="qualification__button qualification__active button--flex"
           >
             <i
               className="uil uil-graduation-cap
@@ -29,30 +28,6 @@ const Qualification = () => {
             ></i>{" "}
             Education
           </div>
-
-          <div
-            className={
-              toggleState === 2
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(2)}
-          >
-            <i
-              className="uil uil-briefcase-alt
-                          qualification__icon"
-            ></i>{" "}
-            Experience
-          </div>
-        </div>
-        <div className="qualification__sections">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
-          >
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">Baccalaureate </h3>
@@ -123,20 +98,34 @@ const Qualification = () => {
           </div>
 
           <div
-            className={
-              toggleState === 2
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
+            className=
+
+            "qualification__content qualification__content-active"
+
+
           >
+            <div className="qualification__button qualification__active button--flex">
+              <i
+                className="uil uil-briefcase-alt
+                          qualification__icon"
+              ></i>{" "}
+              Experience
+            </div>
+
+
+            {/* ----------------------------------------------------------------------- */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title"> internship </h3>
-                <span className="qualification__subtitle">web developer(backend)</span>
-                <span className="qualification__subtitle">Wind Consulting tunis</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  July 2023
+                <div className="date-col">
+
+                  <h4 >Wind Consulting tunis</h4>
+                  <div className="qualification__calender">
+
+                    {/* <i className="uil uil-calendar-alt"></i> */}
+
+                    July 2023
+                  </div>
+
                 </div>
               </div>
               <div>
@@ -144,50 +133,92 @@ const Qualification = () => {
 
                 <span className="qualification__line"></span>
               </div>
-            </div>
+              <div className="qualification-info">
 
+                <h3 className="qualification__title"> internship </h3>
+                <span className="qualification__subtitle">
+
+                  web developer(backend)
+                </span>
+              </div>
+
+
+
+
+            </div>
             <div className="qualification__data">
-              <div></div>
+              <div>
+                <div className="date-col">
+
+                  <h4 >G-Dev sousse</h4>
+                  <div className="qualification__calender">
+
+                    {/* <i className="uil uil-calendar-alt"></i> */}
+                    February to June 2021
+                  </div>
+
+                </div>
+              </div>
               <div>
                 <span className="qualification__rounder"></span>
 
                 <span className="qualification__line"></span>
               </div>
+              <div className="qualification-info">
 
-              <div>
                 <h3 className="qualification__title"> End of study project </h3>
                 <span className="qualification__subtitle">
 
                   web developer
                 </span>
-                <span className="qualification__subtitle">G-Dev sousse</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  February to June 2021
-                </div>
               </div>
+
+
+
+
             </div>
 
+
+
+
             <div className="qualification__data">
-
-
               <div>
-                <h3 className="qualification__title">
-                  internship
-                </h3>
-                <span className="qualification__subtitle">web developer(frontend)</span>
-                <span className="qualification__subtitle">G-Dev sousse</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  July 2019                </div>
-              </div>
+                <div className="date-col">
 
+                  <h4 >
+                    G-Dev sousse
+                  </h4>
+                  <div className="qualification__calender">
+
+                    {/* <i className="uil uil-calendar-alt"></i> */}
+                    July 2019
+                  </div>
+
+                </div>
+              </div>
               <div>
                 <span className="qualification__rounder"></span>
 
                 <span className="qualification__line"></span>
               </div>
+              <div className="qualification-info">
+
+                <h3 className="qualification__title"> internship</h3>
+                <span className="qualification__subtitle">
+
+                  web developer(frontend)
+                </span>
+              </div>
+
+
+
+
             </div>
+
+
+            {/* ----------------------------------------------------------------------- */}
+
+           
           </div>
         </div>
       </div>

@@ -1,0 +1,102 @@
+ul.skil-stacks {
+    width: 660px;
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    background-color: #bc1111;
+    pointer-events: none;
+
+}
+
+li.stack {
+    position: absolute;
+    left: 0px;
+    transition: all 0.4s cubic-bezier(.63, .15, .03, 1.02);
+    pointer-events: all;
+}
+
+ul.skils-down {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.skil {
+    transition: all 0.4s cubic-bezier(.63, .15, .03, 1.22);
+    left: 0px;
+    transition-delay: 0.4s;
+    background: #FFF;
+    /* overflow: hidden; */
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0.5rem;
+    transition: scale 1s;
+    padding: 0.5rem 0;
+    box-shadow: 1px 2px 2px 0 #aaa;
+}
+li.skil:hover{
+    scale: 1.2;
+}
+
+
+/* li.skil:hover{
+    transform: scale(2);
+} */
+
+/* div.content {
+    position: relative;
+   margin: auto;
+
+} */
+
+.skil-1 {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+}
+
+.skil-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+}
+
+.skil-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+}
+
+.transition li.stack.stack-1 {
+    left: 0px;
+}
+
+.transition li.stack.stack-2 {
+    left: 130px;
+}
+
+.transition li.stack.stack-3 {
+    left: 440px;
+}
+
+ul.skil-stacks.transition li.stack ul.skils-down li.skil {
+
+    transform: rotateZ(0deg);
+}
+
+ul.skil-stacks.transition li.stack ul.skils-down li.skil.skil-1 {
+    top: 440px;
+}
+
+ul.skil-stacks.transition li.stack ul.skils-down li.skil.skil-2 {
+    top: 220px;
+}

@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
-
+  --glow-color: hsl(33, 68%, 52%);
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
