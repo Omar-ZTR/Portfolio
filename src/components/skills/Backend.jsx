@@ -8,7 +8,13 @@ const Backend = () => {
     const handleskilClick = () => {
         setTransition(!isTransition);
     };
-
+//     console.log("wwwwww", window.pageYOffset);
+//     var __Y = window.pageYOffset;
+//     const h = skillsGroup.clientHeight
+//     setTimeout(function() {
+//       window.scrollTo(0, __Y - h );
+//   }, 1000);
+//     console.log("hhhhhswwww",h)
     return (
         <div >
             <ul className={`skil-stacks ${isTransition ? 'transition' : ''}`} onClick={handleskilClick}>

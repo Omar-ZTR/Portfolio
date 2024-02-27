@@ -9,7 +9,7 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm('service_8cacn2b', 'template_2q3se9m', form.current, 'fc8Z7VmDXmL6YmP0I')
-       e.target.reset()
+        e.target.reset()
     };
 
     return (
@@ -35,6 +35,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
+                            <hr />
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Whatsapp</h3>
@@ -58,6 +59,15 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
+
+                    {/* <div className="list__talk">
+                        <div className="father">Email</div>
+                        <div className="child">kkkkkkkksddsdskdkskds</div>
+                        <div className="father">Email</div>
+                        <div className="child">kkkkkkkksddsdskdkskds</div>
+                        <div className="father">Email</div>
+                        <div className="child">kkkkkkkksddsdskdkskds</div>
+                    </div> */}
                 </div>
 
                 <div className="contact__content">
@@ -65,9 +75,7 @@ const Contact = () => {
                     <form ref={form} onSubmit={sendEmail}
                         className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">
-                                Name
-                            </label>
+                           
                             <input type="text" name='name'
                                 className='contact__form-input'
                                 placeholder='Insert your name' />
@@ -75,9 +83,7 @@ const Contact = () => {
 
                         </div>
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">
-                                Mail
-                            </label>
+
                             <input type="email" name='email'
                                 className='contact__form-input'
                                 placeholder='Insert your email' />
@@ -86,9 +92,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">
-                                Project
-                            </label>
+
                             <textarea name="project" cols="30" rows="10"
                                 className='contact__form-input'
                                 placeholder='Write your project' />

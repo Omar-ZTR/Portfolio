@@ -1,7 +1,10 @@
+@import "https://unpkg.com/open-props";
+
 .skills__container {
   grid-template-columns: repeat(auto, 350px);
   column-gap: 3rem;
   justify-content: center;
+
 }
 
 /* .skills__content {
@@ -14,10 +17,10 @@
 } */
 .zind {
   /* z-index: 1; */
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   border-radius: 1rem;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
   box-shadow: 0 50px 100px -20px rgba(45, 45, 46, 0.25), 0 30px 60px -30px rgba(0, 0, 0, .3), inset 0 -2px 6px 0 rgba(10, 37, 64, .35);
 
 }
@@ -42,27 +45,39 @@
 
 .skills__group {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: repeat(6, 150px);
   column-gap: 0.1rem;
   row-gap: 1.5rem;
   /* transition: all 0.4s cubic-bezier(.63, .15, .03, 1.02); */
 
 
 }
-.more__skills{
-  position: absolute;
-  margin-left: 10;
-  
-  margin-top: -110px;
-  
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.less__skills{
+
+.transition-button {
   position: absolute;
-  margin-left: -20px;
-  
-  margin-top: 37%;
-  
+
+  transform: translateY(-10px);
+  transition: margin 0.8s ease;
 }
+
+.transition-button.top {
+  margin: -30px 0 0 0;
+}
+
+.transition-button.bottom {
+  margin: 0 0 -60rem 0;
+}
+
+
+
 /* .skills__group:hover .skills__data {
     position: relative;
 } */
@@ -76,7 +91,7 @@
   padding: 0.5rem 0;
   /* position: relative; */
   background-color: transparent;
-opacity: 0;
+  opacity: 0;
   transform: rotateX(5deg) rotateZ(40deg);
   /* transform-style: preserve-3d; */
   border-radius: 32px;
@@ -264,10 +279,105 @@ opacity: 0;
 }
 
 
-/* .skills__level {
-    font-size: var(--tinty-font-size);
-} */
+.face__Skills {
+  font-size: var(--tinty-font-size);
 
+  display: flex;
+
+justify-content: center;
+  column-gap: 2px;
+  align-items: center;
+
+}
+.skil__icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: var(--mb-0-5);
+  transform: translateY(5px);
+}
+.transition-button:hover .skil__icon{
+  animation: animate-arrow-1 1s ease-in-out infinite;
+}
+.skil2__icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: var(--mb-0-5);
+  transform: translateY(5px);
+}
+.transition-button:hover .skil2__icon{
+  animation: animate-arrow-2 1s ease-in-out infinite;
+}
+
+@keyframes animate-arrow-1 {
+  0%{transform:translateY(-10px);opacity: 0; scale: 0.5;}
+  50%{transform:translateY(0px);opacity: 1;
+    scale: 1.4;}
+  75%{transform:translateY(10px);opacity: 1;
+  scale: 1.2;}
+  100%{transform:translateY(20px);opacity: 0.5;
+    scale: 1;}
+  
+}
+@keyframes animate-arrow-2 {
+  0%{transform:translateY(20px);opacity: 0; scale: 0.5;}
+  50%{transform:translateY(0px);opacity: 1;
+    scale: 1.4;}
+  75%{transform:translateY(-5px);opacity: 1;
+  scale: 1.2;}
+  100%{transform:translateY(-10px);opacity: 0.5;
+    scale: 1;}
+  
+}
+.top__skills {
+
+  background: transparent;
+  border-radius: 8px;
+  padding: 50px 0;
+  width: 200px;
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__levels {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4e4e 3.6deg, #ededed 0deg);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.skills__levels::before {
+  content: '';
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px inset, rgba(0, 0, 0, 0.09) 0px 4px 2px inset, rgba(0, 0, 0, 0.09) 0px 8px 4px inset, rgba(0, 0, 0, 0.09) 0px 16px 8px inset, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+
+.skill__value {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.skill__name {
+  font-size: 30px;
+  font-weight: 500;
+  color: #606060;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
