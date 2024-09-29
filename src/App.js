@@ -43,7 +43,7 @@ function App() {
         <Home />
         <div id='gri' className='gridd'>
           <CardProfile />
-          <div>
+          <div style={{ display: "flex", gap:"50px" , flexDirection:"column" }}>
             <About />
             <Skills />
             <Services />

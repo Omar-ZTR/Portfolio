@@ -4,13 +4,13 @@
 
 .shap{
     
-    background: url(../../asset/layeree.svg);
+    background: url(http://localhost:3000/static/media/layeree.7455141919aa4fbc5df8.svg);
     background-repeat: no-repeat;
+    background-size: cover;
     /* mix-blend-mode: multiply; */
-    box-shadow: 0px -143px 85px -6px rgb(245, 139, 139) inset;
-   right:  0;
+    box-shadow: 1px -20px 85px -6px rgb(243 221 210) inset;
+    right: 0;
     object-fit: cover;
-   
 }
 
 .home__content {
@@ -228,7 +228,7 @@ animation: profile__animate 8s ease-in-out infinite 1s;
     height: 100%;
     
     padding: 0  1px;
-    color: #0e6ffc;
+    color: #f87e14;
     animation: spin_words 9s infinite;
 }
 @keyframes spin_words{

@@ -21,22 +21,75 @@
 
 .contact__form {
     width: 360px;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
 }
-
+.contact__desc{
+    
+    color: white;
+    font-size: var(--small-font-size);
+}
 .contact__card {
     background-color: var(--title-color);
     box-shadow: 0 50px 100px -20px rgba(45, 45, 46, 0.25), 0 30px 60px -30px rgba(0, 0, 0, .3), inset 0 2px 6px 2px rgba(255, 255, 255, 0.351);
     border-radius: 0.75rem;
-display: inline;
+/* display: inline; */
     padding: 1rem;
     /* border-radius: 0.75rem; */
     /* text-align: center; */
 }
+.btns__calls{
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 1rem;
+}
 .contact__card-icon {
+    /* position: absolute; */
     font-size: 2rem;
     color: whitesmoke;
-    margin-bottom: var(--mb-0-5);
+    /* margin-bottom: 9rem; */
 }
+.btn__Call:hover .contact__card-icon{
+    scale: 1.5;
+}
+.btns__calls .btn__Call:nth-child(1):hover {
+    background-color: #ff0000; /* Change to your desired color */
+}
+
+.btns__calls .btn__Call:nth-child(2):hover {
+    background-color: #00ff00; /* Change to your desired color */
+}
+
+.btns__calls .btn__Call:nth-child(3):hover {
+    background-color: #0000ff; /* Change to your desired color */
+}
+.btn__Call:hover{
+  width:  50%;
+   /* background-color: antiquewhite; */
+}
+
+.contact__hr{
+    width: 100%;
+}
+.btn__Call {
+    display: flex;
+height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+    overflow:hidden;
+    white-space: nowrap;
+  justify-content: flex-start;
+  column-gap: 0.6rem;
+  background-color: var(--title-color);
+  box-shadow: 0 50px 100px -20px rgba(45, 45, 46, 0.25), 0 30px 60px -30px rgba(0, 0, 0, .3), inset 0 2px 6px 2px rgba(255, 255, 255, 0.351);
+  border-radius: 6rem;
+  transition: all 0.5s linear;
+}
+.btn__Call h6{
+    
+    margin-top: var(--mb-0-5);
+}
+
 
 .contact__card-title,
 .contact__card-data {

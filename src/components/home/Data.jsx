@@ -1,18 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 const Data = () => {
-
-
   return (
     <div className="home__data">
-      <h1 className="home__title">Omar Zouiter
+      <h1 className="home__title">
+        Omar Zouiter
         <svg
           width="36"
           height="36"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="home__hand" data-aos="zoom-in" data-aos-easing="ease-in-back"
+          className="home__hand"
+          data-aos="zoom-in"
+          data-aos-easing="ease-in-back"
           data-aos-delay="300"
           data-aos-offset="0"
         >
@@ -64,20 +65,39 @@ const Data = () => {
       <div class="wrapper">
         <h3>I'M</h3>
         <div class="words">
-          <h3> <span className='rotating'>Web</span></h3>
-          <h3> <span className='rotating'>Front-end</span></h3>
-          <h3> <span className='rotating'>back-end</span></h3>
-          <h3> <span className='rotating'>Fullstack</span></h3>
+          <h3>
+         
+            <span className="rotating">Web Developer </span>
+          </h3>
+          <h3>
+          
+            <span className="rotating">Front-end Developer</span>
+          </h3>
+          <h3>
+           
+            <span className="rotating">back-end Developer</span>
+          </h3>
+          <h3>
+            
+            <span className="rotating">Fullstack Developer</span>
+          </h3>
 
-          <h3> <span className='rotating'>mobile</span></h3>
+          <h3>
+            
+            <span className="rotating">mobile Developer</span>
+          </h3>
         </div>
-        <h3>Developer</h3>
+        {/* <h3>Developer</h3> */}
       </div>
 
-   
-      <p className="home__description" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom">I'm software engineering student based in sousse,
-        and I'm very passionate and dedicated to my work.
+      <p
+        className="home__description"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        Software engineer specializing in web development. Enthusiastic and
+        motivated, I am open to opportunities to enhance my technical and
+        analytical skills.
       </p>
       <a href="#contact" className="button button--flex">
         Say hello
@@ -100,10 +120,7 @@ const Data = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default Data
-
-
-
+export default Data;

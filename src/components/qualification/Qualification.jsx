@@ -10,17 +10,18 @@ const Qualification = () => {
     setToggleState(index);
   };
 
-  return (<div>
-    <section className="qualification container section" id="portfolio">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personel journey</span>
+  return (<div className="boxWithBAck  " >
+    <section   id="portfolio">
+      <h2 className="section__title">Resume</h2>
+      <span className="section__subtitle">My personal journey</span>
 
       <div className="qualification__container container">
 
         <div className="qualification__sections">
-        
+       
+        <Experience />
           <Education />
-          <Experience />
+          
         
         </div>
       </div>

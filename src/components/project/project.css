@@ -36,41 +36,45 @@
   }
 } */
 
-.card {
+/* .cardProject {
   width: 20rem;
-  height: 26rem;
+  /* height: 26rem;
   border-radius: 2rem;
   margin: auto;
-  background: white;
+  /* background: white; 
   position: relative;
-
   display: flex;
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+} */
+.cardProject{
+  width: fit-content;
+  /* text-align: center; */
+  margin: 0 auto;
 }
-
-.card:hover {
+.swiper-slide-active .cardProject:hover {
   transform: translateY(10px);
 }
 
-.card:hover:before {
+.swiper-slide-active .cardProject:hover:before {
   opacity: 1;
 }
 
-.card:hover .info {
+.swiper-slide-active .cardProject:hover .info {
   opacity: 1;
   transform: translateX(10px);
+  width: 20rem;
 }
 
-.card:before {
+.cardProject:before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  
 
   display: block;
-  width: 100%;
+  width: 20rem;
   height: 50%;
   border-radius: 2rem;
   /* background: rgba(231, 5, 5, 0.6); */
@@ -82,36 +86,28 @@
   opacity: 0;
 }
 
-.card img {
-  width: 20rem;
-  height: 26rem;
-  object-fit: cover;
+
+
+.cardProject .info {
   position: absolute;
-
-  border-radius: 2rem;
-}
-
-.card .info {
-  position: relative;
   z-index: 3;
   color: white;
   opacity: 0;
   transform: translateX(30px);
   transition: 0.5s;
   padding: 20px;
+  bottom: 0;
+  width: 20rem;
 }
 
-.card .info h1 {
-  margin: 0px;
-}
 
-.card .info p {
+.cardProject .info p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
 }
 
-.card .info button {
+.cardProject .info button {
   padding: 0.6rem;
   outline: none;
   border: none;
@@ -123,7 +119,7 @@
   transition: 0.4s ease;
 }
 
-.card .info button:hover {
+.cardProject .info button:hover {
   background: dodgerblue;
   color: white;
 }
@@ -157,7 +153,7 @@
 }
 
 .heading {
-color: rgb(245, 245, 245);
+color: rgb(21, 20, 20);
 
 
   font-size: 3.5rem;
@@ -174,7 +170,7 @@ color: rgb(245, 245, 245);
 
 .swiper-slide {
   width: 27rem;
-  height: 42rem;
+  height: fit-content;
   position: relative;
   text-align: center;
 }
@@ -226,7 +222,8 @@ background-size: cover;
   width: 20rem;
   height: 26rem;
   border-radius: 2rem;
-  object-fit: cover;
+  object-fit: contain;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .swiper-slide-shadow-left,

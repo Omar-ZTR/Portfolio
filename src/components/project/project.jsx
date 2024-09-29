@@ -8,20 +8,20 @@ import 'swiper/css/navigation';
 import "./project.css"
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
-import slide_image_1 from '../../asset/omr.jpg';
-import slide_image_2 from '../../asset/omr.jpg';
+import slide_image_1 from '../../asset/SsProject.png';
+import slide_image_2 from '../../asset/SsProject.png';
 import slide_image_3 from '../../asset/omr.jpg';
 import slide_image_4 from '../../asset/omr.jpg';
-import slide_image_5 from '../../asset/omr.jpg';
-import slide_image_6 from '../../asset/omr.jpg';
-import slide_image_7 from '../../asset/omr.jpg';
+
 
 function Project() {
   return (<div>
     <div className='diag'></div>
-    <div className='boxstyl'>
+    <div className='boxWithBAck'>
       <div className="container " >
-        <h1 className="heading">Flower Gallery</h1>
+      
+        <h2 className="section__title">Portfolio</h2>
+        <span className="section__subtitle">My personal journey</span>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -43,12 +43,21 @@ function Project() {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
-          <SwiperSlide>
-            <img src={slide_image_1} alt="slide_image" />
-          </SwiperSlide>
+         <SwiperSlide>
+
+<div className='cardProject'>
+  <img src={slide_image_2} alt="slide_image" />
+  <div className='info'>
+    <h1> Mountain</h1>
+    <p> Lorem Ipsum is simply dummy text from the printing and typeseting industry
+    </p>
+    <button>Read More </button>
+  </div>
+</div>
+</SwiperSlide>
           <SwiperSlide>
 
-            <div className='card'>
+            <div className='cardProject'>
               <img src={slide_image_2} alt="slide_image" />
               <div className='info'>
                 <h1> Mountain</h1>
@@ -60,12 +69,16 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide>
 
-            <img src={slide_image_3} alt="slide_image" />
-            <div className='cardH'>
-              <h3>project1</h3>
-              <p>lorem ipsum fncb cchdhcb hbchbec hbcheb chbc </p>
-            </div>
-          </SwiperSlide>
+<div className='cardProject'>
+  <img src={slide_image_2} alt="slide_image" />
+  <div className='info'>
+    <h1> Mountain</h1>
+    <p> Lorem Ipsum is simply dummy text from the printing and typeseting industry
+    </p>
+    <button>Read More </button>
+  </div>
+</div>
+</SwiperSlide>
           <SwiperSlide>
             <img src={slide_image_4} alt="slide_image" />
           </SwiperSlide>

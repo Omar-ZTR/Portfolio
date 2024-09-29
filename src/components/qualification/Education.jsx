@@ -11,82 +11,12 @@ function Education() {
         >
             <div className="qualification__topTitle ">
                
-            My Education
+            Education
             </div>
 
 
             {/* ----------------------------------------------------------------------- */}
-            <div className="qualification__data">
-                <div>
-                    <div className="date-col">
-
-                        <h4 >High school Bekalta
-                        </h4>
-                        <div className="qualification__calender">
-
-                            {/* <i className="uil uil-calendar-alt"></i> */}
-
-                            2017
-                        </div>
-
-                    </div>
-                </div>
-                <div>
-                    <span className="qualification__rounder"></span>
-
-                    <span className="qualification__line"></span>
-                </div>
-                <div className="qualification-info">
-
-                    <h3 className="qualification__title"> Baccalaureate </h3>
-                    <span className="qualification__subtitle">
-
-                        Computer Science
-                    </span>
-                </div>
-
-
-
-
-            </div>
-            <div className="qualification__data">
-                <div>
-                    <div className="date-col">
-
-                        <h4 >
-                            Higher Institute of Applied Sciences and Technologies of Sousse
-
-                        </h4>
-                        <div className="qualification__calender">
-
-                            {/* <i className="uil uil-calendar-alt"></i> */}
-                            2017 - 2021
-                        </div>
-
-                    </div>
-                </div>
-                <div>
-                    <span className="qualification__rounder"></span>
-
-                    <span className="qualification__line"></span>
-                </div>
-                <div className="qualification-info">
-
-                    <h3 className="qualification__title">   Diploma </h3>
-                    <span className="qualification__subtitle">
-
-                        Applied degree in industrial computing.
-                    </span>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
+          
             <div className="qualification__data">
                 <div>
                     <div className="date-col">
@@ -111,7 +41,7 @@ function Education() {
                 </div>
                 <div className="qualification-info">
 
-                    <h3 className="qualification__title">Engineering cycle</h3>
+                    <h3 className="qualification__title">National Engineering Diploma</h3>
                     <span className="qualification__subtitle">
 
                         Software engineering
@@ -122,8 +52,80 @@ function Education() {
 
 
             </div>
+           
+            <div className="qualification__data">
+                <div>
+                    <div className="date-col">
+
+                        <h4 >
+                            Higher Institute of Applied Sciences and Technologies of Sousse
+
+                        </h4>
+                        <div className="qualification__calender">
+
+                            {/* <i className="uil uil-calendar-alt"></i> */}
+                            2017 - 2021
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <span className="qualification__rounder"></span>
+
+                    <span className="qualification__line"></span>
+                </div>
+                <div className="qualification-info">
+
+                    <h3 className="qualification__title">National Diploma of Applied License</h3>
+                    <span className="qualification__subtitle">
+
+                    Industrial Computing
+                    </span>
+                </div>
 
 
+
+
+            </div>
+
+
+
+
+          
+
+ <div className="qualification__data">
+                <div>
+                    <div className="date-col">
+
+                        <h4 >High school Bekalta
+                        </h4>
+                        <div className="qualification__calender">
+
+                            {/* <i className="uil uil-calendar-alt"></i> */}
+
+                            2017
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <span className="qualification__rounder"></span>
+
+                    <span className="qualification__line"></span>
+                </div>
+                <div className="qualification-info">
+
+                    <h3 className="qualification__title"> Bachelor  </h3>
+                    <span className="qualification__subtitle">
+
+                    Computer Science
+                    </span>
+                </div>
+
+
+
+
+            </div>
             {/* ----------------------------------------------------------------------- */}
 
 

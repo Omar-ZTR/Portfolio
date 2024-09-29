@@ -45,25 +45,27 @@ function CardProfile() {
                     Zouiter Omar
 
                 </div>
+                <div className="ds-info-detail ">
+                        <h2 className="subName" >Software engineer
+                        </h2>
+                    </div>
                 <hr />
                 <div className="ds-info">
                     <div className="ds-info-detail ">
-                        <h6 >nationality <i className="fas fa-edit"></i></h6>
-                        <h6>tunisian</h6>
+                        <h6>Bekalta Monastir,Tunisia</h6>
                     </div>
                     <div className="ds-info-detail ">
-                        <h6 >Age <i className="fas fa-project-diagram"></i></h6>
-                        <h6>26</h6>
+                        <h6 >(+216) 24934850</h6>
                     </div>
                     <div className="ds-info-detail ">
-                        <h6 >Projects<i className="fas fa-comments"></i></h6>
-                        <h6>7+</h6>
+                        <h6 >omarzouiter97@gmail.com
+                        </h6>
                     </div>
                 </div>
                 <div className="ds-skill">
                     <h6>Skill <i className="fa fa-code" aria-hidden="true"></i></h6>
                     <div className="skill html">
-                        <h6><i className="fab fa-html5"></i> Backend </h6>
+                        <h6><i className="fab fa-html5"></i> Problem-solving </h6>
                         <div className="bar bar-html">
                             <p>80%</p>
                         </div>

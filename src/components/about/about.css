@@ -76,8 +76,9 @@ border-radius: 1rem;
 }
 
 .about__description {
-    padding: 0 1rem 0 0;
+    padding: 1.5rem 1rem 0 0;
     margin-bottom: var(--mb-2-5);
+    color: #d2d2d2;
 }
 
 /*=============== BREAKPOINTS ===============*/

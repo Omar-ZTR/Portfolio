@@ -23,7 +23,7 @@ const Contact = () => {
                     <h3 className="contact__title">Talk to me</h3>
 
                     <div className="contact__info">
-                        <div className="contact__card">
+                        {/* <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
@@ -32,23 +32,45 @@ const Contact = () => {
                             <a href="mailto:examplemail@gmail.com.com" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
-                        </div>
+                        </div> */}
 
                         <div className="contact__card">
-                            <hr />
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                            <div className="contact__desc">
+                                <p>
+                                    The page contains exactly what you would expect from a well-known developer.
+                                    The compulsory “about page”, a blog, a hire me section,
+                                    a speaking page with future and previous events,
+                                    and links to her social networks, podcasts, and interviews.
+                                </p>
+                            </div>
+                            <hr className='contact__hr' />
 
-                            <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">24934850</span>
 
-                            <a href="https://api.whatsapp.com/send?
+                            {/* <h3 className="contact__card-title">Whatsapp</h3> */}
+                            <div className="btns__calls">
+                                <div className="btn__Call" typeof='wt'>
+                                    <i className="bx bxl-whatsapp contact__card-icon"></i>
+                                    <h6 className="contact__card-data">24934850</h6>
+                                </div>
+
+                                <div className="btn__Call">
+                                    <i className="bx bxl-whatsapp contact__card-icon"></i>
+                                    <h6 className="contact__card-data">24934850</h6>
+                                </div>
+
+                                <div className="btn__Call">
+                                    <i className="bx bxl-whatsapp contact__card-icon"></i>
+                                    <h6 className="contact__card-data">24934850</h6>
+                                </div>
+                            </div>
+                            {/* <a href="https://api.whatsapp.com/send?
                             phone=24934850&text=Hello, more information!"
                                 className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                            </a>
+                            </a> */}
                         </div>
 
-                        <div className="contact__card">
+                        {/* <div className="contact__card">
                             <i className="bx bxl-messenger contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Messenger</h3>
@@ -57,7 +79,7 @@ const Contact = () => {
                             <a href="http://m.me/omar-zouiter" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* <div className="list__talk">
@@ -75,7 +97,7 @@ const Contact = () => {
                     <form ref={form} onSubmit={sendEmail}
                         className="contact__form">
                         <div className="contact__form-div">
-                           
+
                             <input type="text" name='name'
                                 className='contact__form-input'
                                 placeholder='Insert your name' />

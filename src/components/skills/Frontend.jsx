@@ -19,6 +19,13 @@ import word from "../../asset/word.png";
 import fire from "../../asset/fire.png";
 import uml from "../../asset/uml.png";
 import git from "../../asset/git.png";
+import reactHover from "../../asset/reactHover.png";
+import mysqlHover from "../../asset/mysqlHover.png";
+
+import angularHover from "../../asset/angularHover.png";
+
+import cssHover from "../../asset/cssHover.png";
+import jsHover from "../../asset/javascriptHover.png";
 
 const Frontend = () => {
 
@@ -57,8 +64,13 @@ const Frontend = () => {
 
     <div className="skills__content">
       <div className="buttonContainer">
+     
         <a href="#skills" className={`button transition-button ${isTop ? 'top' : 'bottom'}`} onClick={handleToggleSkills}>
-
+        <img className="imgHover imgHover1" src={reactHover} alt="hhh" />
+      <img className="imgHover imgHover2" src={jsHover} alt="hhh" />
+      <img className="imgHover imgHover3" src={angularHover} alt="hhh" />
+      <img className="imgHover imgHover4" src={cssHover} alt="hhh" />
+      <img className="imgHover imgHover5" src={mysqlHover} alt="hhh" />
           {showAllSkills ? 'Less Skills  ' : 'More Skills '}<i className={`${isTop ? 'bx bx-chevrons-down skil__icon' : 'bx bx-chevrons-up skil2__icon'}`}></i>
         </a>
       </div>

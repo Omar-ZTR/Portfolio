@@ -14,11 +14,51 @@ function Experience() {
         className="uil uil-briefcase-alt
                   qualification__icon"
       ></i>{" "} */}
-      My Experience
+     Professional Experience
     </div>
 
 
     {/* ----------------------------------------------------------------------- */}
+    
+    <div className="qualification__data">
+      <div>
+        <div className="date-col">
+
+          <h4 >SmartSkills </h4>
+          <div className="qualification__calender">
+
+            {/* <i className="uil uil-calendar-alt"></i> */}
+            March to July 2024
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <span className="qualification__rounder"></span>
+
+        <span className="qualification__line"></span>
+      </div>
+      <div className="qualification-info">
+
+        <h3 className="qualification__title"> End-of-Study Internship </h3>
+        <span className="qualification__subtitle">
+
+        <ul className='listExp'>
+            <li>
+            Design and development of a web application for exam management.
+            </li>
+            <li>
+            Technologies: Angular, NodeJs, MySQL, Figma.
+            </li>
+          </ul>
+        </span>
+      </div>
+
+
+
+
+    </div>
+    
     <div className="qualification__data">
       <div>
         <div className="date-col">
@@ -40,10 +80,18 @@ function Experience() {
       </div>
       <div className="qualification-info">
 
-        <h3 className="qualification__title"> internship </h3>
+        <h3 className="qualification__title"> Summer Internship </h3>
         <span className="qualification__subtitle">
 
-          web developer(backend)
+          <ul className='listExp'>
+            <li>
+            Develop a module to optimize the performance of API call systems.
+           
+            </li>
+            <li>
+            Technologies: NodeJs, MySQL.
+            </li>
+          </ul>
         </span>
       </div>
 
@@ -71,10 +119,18 @@ function Experience() {
       </div>
       <div className="qualification-info">
 
-        <h3 className="qualification__title"> End of study project </h3>
+        <h3 className="qualification__title"> End-of-Study Internship </h3>
         <span className="qualification__subtitle">
 
-          web developer
+        <ul className='listExp'>
+            <li>
+            Creation of a web application dedicated to job postings.
+           
+            </li>
+            <li>
+            Technologies: Reactjs, MongoDB, NodeJs, Figma.
+            </li>
+          </ul>
         </span>
       </div>
 
@@ -86,39 +142,7 @@ function Experience() {
 
 
 
-    <div className="qualification__data">
-      <div>
-        <div className="date-col">
-
-          <h4 >
-            G-Dev sousse
-          </h4>
-          <div className="qualification__calender">
-
-            {/* <i className="uil uil-calendar-alt"></i> */}
-            July 2019
-          </div>
-
-        </div>
-      </div>
-      <div>
-        <span className="qualification__rounder"></span>
-
-        <span className="qualification__line"></span>
-      </div>
-      <div className="qualification-info">
-
-        <h3 className="qualification__title"> internship</h3>
-        <span className="qualification__subtitle">
-
-          web developer(frontend)
-        </span>
-      </div>
-
-
-
-
-    </div>
+    
 
 
     {/* ----------------------------------------------------------------------- */}
