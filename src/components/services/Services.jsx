@@ -19,13 +19,12 @@ const Services = () => {
   };
 
   return (
-    
-      <section  id="services" className='boxWithBAck'>
-      <div className="container " >
+    <section id="services" className="boxWithBAck"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
+      <div className="container ">
         <h2 className="section__title">Services</h2>
         <span className="section__subtitle">What i offer</span>
-        <p style={{    color: "#4d4d4d",
-    marginbottom:" 0.5rem"}}>
+        <p style={{ color: "#4d4d4d", marginbottom: " 0.5rem" }}>
           As a Full Stack Web and Mobile Developer and UI/UX Designer, I
           specialize in building responsive, flexible, and high-performance
           websites and applications with a strong focus on UI/UX design.
@@ -36,18 +35,17 @@ const Services = () => {
 
         <div className="services__container container grid">
           <div className="services__content">
-            <div>
+            <div className="services__item">
               {/* <i className="uil uil-web-grid services__icon"></i> */}
-              <img style={{ height: "100px" }} src={wweb} alt="hhh" />
+              <img style={{ height: "4rem" }} src={wweb} alt="hhh" />
               <h3 className="services__title">Web App Development</h3>
             </div>
 
-            <span className="services__button" onClick={() => toggleTab(1)}>
+            {/* <span className="services__button" onClick={() => toggleTab(1)}>
               View More
               <i className="uil uil uil-arrow-right services__button-icon"></i>
-            </span>
-
-            <div
+            </span> 
+             <div
               className={
                 toggleState === 1
                   ? "services__modal active__modal"
@@ -65,9 +63,8 @@ const Services = () => {
                 <p className="services__modal-description">
                   Service with more than 3 years of experience. Providing
                   quality work to clients and companies.
-                </p>
+                </p> <ul className="services__modal-services grid">
 
-                {/* <ul className="services__modal-services grid">
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">I develop the user interface.</p>                                   
@@ -102,8 +99,7 @@ const Services = () => {
                                     </li>
 
 
-                                </ul> */}
-
+                                </ul> 
                 <div className="grid-wrapper">
                   <div>
                     <img src={git} alt="" />
@@ -128,19 +124,19 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           <div className="services__content">
-            <div>
+            <div className="services__item">
               {/* <i className="uil uil-arrow services__icon"></i> */}
-              <img style={{ height: "100px" }} src={wireframe} alt="hhh" />
+              <img style={{ height: "4rem" }} src={wireframe} alt="hhh" />
               <h3 className="services__title">
-                Ui/Ux <br /> Designer
+                Ui/Ux Designer
               </h3>
             </div>
 
-            <span className="services__button" onClick={() => toggleTab(2)}>
+            {/* <span className="services__button" onClick={() => toggleTab(2)}>
               View More
               <i className="uil uil uil-arrow-right services__button-icon"></i>
             </span>
@@ -202,17 +198,17 @@ const Services = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="services__content">
-            <div>
+            <div className="services__item">
               {/* <i className="uil uil-edit services__icon"></i> */}
-              <img style={{ height: "100px" }} src={mobil} alt="hhh" />
+              <img style={{ height: "4rem" }} src={mobil} alt="hhh" />
               <h3 className="services__title">Mobile App Development</h3>
             </div>
 
-            <span className="services__button" onClick={() => toggleTab(3)}>
+            {/* <span className="services__button" onClick={() => toggleTab(3)}>
               View More
               <i className="uil uil uil-arrow-right services__button-icon"></i>
             </span>
@@ -274,11 +270,11 @@ const Services = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-     
-    </div> </section>
+      </div>
+    </section>
   );
 };
 

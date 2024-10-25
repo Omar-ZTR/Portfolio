@@ -42,21 +42,23 @@ function App() {
       <main className='main' >
         <Home />
         <div id='gri' className='gridd'>
-          <CardProfile />
+         
           <div style={{ display: "flex", gap:"50px" , flexDirection:"column" }}>
-            <About />
-            <Skills />
-            <Services />
-            <Qualification />
-            <Testimonials />
-            <Project />
-            <Contact />
-          </div>
+            < About  />
+            <Skills  />
+            <Services  />
+            <Qualification  />
+            <Project  /> 
+            <Contact  />
+           {/*  <Testimonials />
+            
+           */}
+          </div> 
 
 
         </div>
       </main>
-
+      <CardProfile />
       <Footer />
       <ScrollUp />
     </>

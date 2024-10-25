@@ -13,13 +13,14 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact section" id="contact">
+        <section className="contact section" id="contact"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
 
             <h2 className="section__title">Get in touch</h2>
             <span className="section__subtitle">Contact Me</span>
 
             <div className="contact__container container grid">
-                <div className="contact__content">
+                {/* <div className="contact__content">
                     <h3 className="contact__title">Talk to me</h3>
 
                     <div className="contact__info">
@@ -32,21 +33,24 @@ const Contact = () => {
                             <a href="mailto:examplemail@gmail.com.com" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
-                        </div> */}
+                        </div> 
 
                         <div className="contact__card">
                             <div className="contact__desc">
-                                <p>
-                                    The page contains exactly what you would expect from a well-known developer.
-                                    The compulsory “about page”, a blog, a hire me section,
-                                    a speaking page with future and previous events,
-                                    and links to her social networks, podcasts, and interviews.
-                                </p>
+                             <p>
+                                Project 
+                             </p>
+                             <p>
+                                Ideas 
+                             </p>
+                             <p>
+                                Task 
+                             </p>
                             </div>
                             <hr className='contact__hr' />
 
 
-                            {/* <h3 className="contact__card-title">Whatsapp</h3> */}
+                           <h3 className="contact__card-title">Whatsapp</h3> 
                             <div className="btns__calls">
                                 <div className="btn__Call" typeof='wt'>
                                     <i className="bx bxl-whatsapp contact__card-icon"></i>
@@ -67,10 +71,10 @@ const Contact = () => {
                             phone=24934850&text=Hello, more information!"
                                 className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                            </a> */}
+                            </a> 
                         </div>
 
-                        {/* <div className="contact__card">
+                       <div className="contact__card">
                             <i className="bx bxl-messenger contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Messenger</h3>
@@ -79,19 +83,19 @@ const Contact = () => {
                             <a href="http://m.me/omar-zouiter" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
-                        </div> */}
+                        </div> 
                     </div>
 
-                    {/* <div className="list__talk">
+                    <div className="list__talk">
                         <div className="father">Email</div>
                         <div className="child">kkkkkkkksddsdskdkskds</div>
                         <div className="father">Email</div>
                         <div className="child">kkkkkkkksddsdskdkskds</div>
                         <div className="father">Email</div>
                         <div className="child">kkkkkkkksddsdskdkskds</div>
-                    </div> */}
-                </div>
-
+                    </div> 
+                </div> 
+*/}
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your project</h3>
                     <form ref={form} onSubmit={sendEmail}

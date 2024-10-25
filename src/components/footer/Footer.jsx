@@ -21,18 +21,18 @@ const Footer = () => {
 
                 <div className="footer__social">
                     <a href="https://www.facebook.com/"
-                        className="footer__social-link" target="_blank">
+                        className="footer__social-link">
                         <i class="bx bxl-facebook"></i>
                     </a>
-
+                    {/* target="_blank" */}
                     <a href="https://www.instagram.com/"
-                        className="footer__social-link" target="_blank">
+                        className="footer__social-link" >
                         <i class="bx bxl-instagram"></i>
                     </a>
 
 
                     <a href="https://twitter.com/"
-                        className="footer__social-link" target="_blank">
+                        className="footer__social-link" >
                         <i class="bx bxl-twitter"></i>
                     </a>
 

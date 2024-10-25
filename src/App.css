@@ -228,8 +228,10 @@ img {
   display: block;
 }
 .gridd{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  max-width: 999px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 3fr; */
+  margin: 0 auto ;
  
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -299,7 +301,9 @@ z-index: 2;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
-
+.gridd{
+  margin: 1rem;
+}
   .button {
     padding: 1rem 1.75rem;
   }
@@ -315,7 +319,9 @@ z-index: 2;
   body {
     margin: 0 0 var(--header-height) 0;
   }
-
+  .gridd{
+    margin: 1rem;
+  }
   .section {
     padding: 2rem 0 4rem;
   }
@@ -333,7 +339,9 @@ z-index: 2;
   :root {
     --big-font-size: 2.25rem;
   }
-
+  .gridd{
+    margin: 1rem;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);

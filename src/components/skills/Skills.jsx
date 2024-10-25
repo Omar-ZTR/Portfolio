@@ -99,7 +99,8 @@ const Skills = () => {
   //   background: `conic-gradient(#ff6a3d ${startVal4 * 3.6}deg, #ededed 0deg)`,
   // };
   return (
-    <div className="boxWithBAck">
+    <div className="boxWithBAck"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
       {/* <Qualification/> */}
       <section className="skills  " id="skills">
         <h2 className="section__title">Skills</h2>

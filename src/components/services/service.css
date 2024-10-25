@@ -2,12 +2,14 @@
 grid-template-columns: repeat(3, 270px);
 justify-content: center;
 column-gap: 1.8rem;
+padding: 1rem;
 }
 .services__content {
     position: relative;
+    text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--container-color);
-    padding: 6rem  0 2rem 2.5rem;
+    padding: 2rem;
     margin: 0 1rem;
     box-shadow: -10px 10px 0px 0px rgba(26, 34, 56,1),
 -20px 20px 0px 0px rgba(247, 145, 11, 0.7),
@@ -175,38 +177,62 @@ img {
     grid-template-columns: repeat(3, 218px);
 
  }
+
   }
   
   /* For medium devices */
   @media screen and (max-width: 768px) {
     .services__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .services__content {
-        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+        padding: 1rem;
     }
     .services__icon {
         font-size: 1.5rem;
     }
-
+    .services__item{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+     }
   }
   
 
   @media screen and (max-width: 576px) {
+    .services__item{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+        text-align: center;
+     }
     .services__modal-content {
         padding: 4.5rem 1.5rem 2.5rem;
     }
     .services__modal-description {
         padding: 0;
     }
+    .services__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
   }
   
   /* For small devices */
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
    .services__container {
-    grid-template-columns: max-content;
+    grid-template-columns: auto;
    }
+   .services__item{
+
+    gap: 0;
+    flex-direction: row;
+
+ }
    .services__content {
-    padding-right: 6rem;
+    padding-right: 4.5rem;
+    margin-left: 2.5rem;
    }
   }

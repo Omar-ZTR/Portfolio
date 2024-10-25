@@ -6,12 +6,13 @@ import Info from './Info';
 
 const About = () => {
     return (
-        <section className="about section" id="about">
+        <section className="about section" id="about"   data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
             <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My introduction</span>
 
             <div className="about__container container grid">
-                <div className="about__data">
+                <div className="about__data" >
                     
 
                     <p className="about__description">
