@@ -90,10 +90,10 @@ const Frontend = () => {
           <div className="skills__data">
             <img src={js} alt="hhh" />
             <h3 className="skills__name">JS</h3>
-            <span className="spane top"></span>
+            {/* <span className="spane top"></span>
             <span className="spane right"></span>
             <span className="spane bottom"></span>
-            <span className="spane left"></span>
+            <span className="spane left"></span> */}
           </div>
           <div className="skills__data">
             <img src={angular} alt="hhh" />

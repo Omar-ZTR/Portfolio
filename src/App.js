@@ -45,9 +45,10 @@ function App() {
          
           <div style={{ display: "flex", gap:"50px" , flexDirection:"column" }}>
             < About  />
+            <Qualification  />
             <Skills  />
             <Services  />
-            <Qualification  />
+          
             <Project  /> 
             <Contact  />
            {/*  <Testimonials />

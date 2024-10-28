@@ -100,7 +100,7 @@ position: relative;
         width: 30rem;
         height: fit-content;
         object-fit: contain;
-        margin-left: -10rem;
+        margin-left: -20rem;
     }
 
     .about__box {
@@ -144,7 +144,9 @@ position: relative;
     grid-template-rows: 1fr;
   
     }
-
+.about__img{
+    margin-left: -10rem;
+}
     .about__description {
         padding: 0;
         text-align: start;

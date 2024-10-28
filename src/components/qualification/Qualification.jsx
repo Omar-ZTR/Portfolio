@@ -13,7 +13,7 @@ const Qualification = () => {
   return (
     <div className="boxWithBAck  "  data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"  >
-      <section id="portfolio">
+      <section id="resume">
         <h2 className="section__title">Resume</h2>
         <span className="section__subtitle">My personal journey</span>
 

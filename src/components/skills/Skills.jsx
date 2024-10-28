@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
-
-// import html from "../../asset/html.png";
+import angular from "../../asset/angular.png";
+import node from "../../asset/node.png";
+import figma from "../../asset/figma.png";
+import react from "../../asset/react.png";
+import js from "../../asset/js.png";
 
 // import { Flat, Heat, Nested } from '@alptugidin/react-circular-progress-bar'
 
@@ -99,8 +102,11 @@ const Skills = () => {
   //   background: `conic-gradient(#ff6a3d ${startVal4 * 3.6}deg, #ededed 0deg)`,
   // };
   return (
-    <div className="boxWithBAck"  data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" >
+    <div
+      className="boxWithBAck"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       {/* <Qualification/> */}
       <section className="skills  " id="skills">
         <h2 className="section__title">Skills</h2>
@@ -110,15 +116,50 @@ const Skills = () => {
         <p>
           As a junior Full Stack Web Developer, I specialize in a variety of
           technologies, with a strong emphasis on writing clean, efficient code.
-          Through years of experience, both professionally and as a freelancer,
-          I've demonstrated flexibility and a commitment to delivering top-notch
-          solutions. In addition, my expertise in UI/UX design enables me to
-          create visually appealing and user-friendly experiences. I'm
-          proficient in technologies like Node.js, React, Angular, and Figma.
+          Through of experience as a freelancer, I've demonstrated flexibility
+          and a commitment to delivering top-notch solutions. In addition, my
+          expertise in UI/UX design enables me to create visually appealing and
+          user-friendly experiences.
         </p>
+        <div className="TopSkill" 
+     >
+
+        <div className="skills__Itm" data-aos="fade-up"
+      data-aos-delay="100"  >
+            <img src={angular} alt="hhh" />
+            <h3 className="skills__name">Angular</h3>
+          </div>
+
+          <div className="skills__Itm" data-aos="fade-up"
+      data-aos-delay="250"  >
+            <img src={react} alt="hhh" />
+            <h3 className="skills__name">React</h3>
+          </div>
+
+          <div className="skills__Itm" data-aos="fade-up"
+     data-aos-delay="400"  >
+            <img src={node} alt="hhh" />
+            <h3 className="skills__name">NodeJs</h3>
+          </div>
+
+          <div className="skills__Itm" data-aos="fade-up"
+     data-aos-delay="550"  >
+            <img src={js} alt="hhh" />
+            <h3 className="skills__name">JavaScript</h3>
+          </div>
+
+          <div className="skills__Itm" data-aos="fade-up"
+      data-aos-delay="700"  >
+            <img src={figma} alt="hhh" />
+            <h3 className="skills__name">Figma</h3>
+          </div>
+
+
+
+</div>
         <div style={{ marginBottom: "50px" }}>
           <div className="face__Skills">
-            <div className="top__skills">
+            <div className="top__skills"  >
               {/* <img src={frontendLog} alt="hhh" /> */}
               <span className="skill__name">Frontend </span>
               <div className="skills__levels" style={backgroundStyle1}>
@@ -129,7 +170,7 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className="top__skills">
+            <div className="top__skills"  >
               {/* <img src={backendLog} alt="hhh" /> */}
               <span className="skill__name">Backend </span>
               <div className="skills__levels" style={backgroundStyle2}>
@@ -140,7 +181,7 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className="top__skills">
+            <div className="top__skills"  >
               {/* <img src={designLog} alt="hhh" /> */}
               <span className="skill__name">Designer</span>
               <div className="skills__levels" style={backgroundStyle3}>
@@ -162,7 +203,7 @@ const Skills = () => {
         </div>
         <div className="skills__container  grid">
           <Frontend />
-          {/* <Backend/> */}
+    
         </div>
       </section>
     </div>

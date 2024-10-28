@@ -63,7 +63,7 @@ function CardProfile() {
             <div className="ds-info-icon">
               <i class="bx bxl-linkedin"></i>
             </div>
-            <h6>Bekalta Monastir,Tunisia</h6>
+            <h6>Omar zouiter</h6>
           </div>
           <div className="ds-info-detail ">
           <div className="ds-info-icon">

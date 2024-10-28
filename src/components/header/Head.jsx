@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect  } from 'react';
 import "./Had.css";
 const Head = () => {
   /*~~~~~~~~~~~~~~~~~~~ change background header ~~~~~~~~~~~~~~~~~~~ */
@@ -14,6 +14,32 @@ const Head = () => {
   /*~~~~~~~~~~~~~~~~~~~ Toggle Menu ~~~~~~~~~~~~~~~~~~~ */
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+
+
+  /*~~~~~~~~~~~~~~~~~~~ Observe sections to change active nav ~~~~~~~~~~~~~~~~~~~ */
+  useEffect(() => {
+
+    const sections = document.querySelectorAll("section[id]");
+    const options = {
+      root: null,
+      threshold: 0.3, // Adjust threshold for when section is considered "in view"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveNav(`#${entry.target.id}`);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   return (
     <header className="ha">
       <nav className="nav container">

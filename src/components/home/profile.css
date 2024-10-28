@@ -126,7 +126,7 @@ hr{
 }
 .profi .ds-info {
     position: relative;
-    margin: 0 auto;
+    margin: 0.7rem auto 0;
     width:80%;
     background-color: rgba(12, 74, 129, 0);
   
@@ -266,7 +266,7 @@ right: -25rem;
 
     50% {
         opacity: 1;
-        right: 0;
+        right: -9rem;
     }
 
     100% {
@@ -405,11 +405,23 @@ right: -20rem;
     z-index: -1;
   }
 
+  @media (max-width: 992px) {
+    .profi .name {
 
+        background: -webkit-linear-gradient(127deg, rgb(243 220 208) 74%, rgb(30 30 30) 30%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
   @media (max-width: 500px) {
     .show-CardP {
      width: 16rem;
      height: 35rem;
+
+
+    
+
     }
     .profi{
         top: 2rem;
@@ -449,7 +461,7 @@ right: -20rem;
     
         50% {
             opacity: 1;
-            right: -9rem;
+            right: -5rem;
         }
     
         100% {

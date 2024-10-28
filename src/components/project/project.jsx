@@ -17,11 +17,11 @@ function Project() {
   return (
     <div  data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" >
-      <div className="diag"></div>
-      <div className="boxWithBAck">
+
+      <section id="portfolio" className="boxWithBAck">
         <div className="container ">
           <h2 className="section__title">Portfolio</h2>
-          <span className="section__subtitle">My personal journey</span>
+          <span className="section__subtitle">I am glad to share with you some of my Projects</span>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -150,7 +150,7 @@ function Project() {
             </div>
           </Swiper>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
