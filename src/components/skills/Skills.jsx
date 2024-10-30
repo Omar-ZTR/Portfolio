@@ -6,6 +6,8 @@ import node from "../../asset/node.png";
 import figma from "../../asset/figma.png";
 import react from "../../asset/react.png";
 import js from "../../asset/js.png";
+import flutter from "../../asset/flutter.png";
+import Ts from "../../asset/TS.png";
 
 // import { Flat, Heat, Nested } from '@alptugidin/react-circular-progress-bar'
 
@@ -135,21 +137,29 @@ const Skills = () => {
             <img src={react} alt="hhh" />
             <h3 className="skills__name">React</h3>
           </div>
-
           <div className="skills__Itm" data-aos="fade-up"
-     data-aos-delay="400"  >
+      data-aos-delay="400"  >
+            <img src={Ts} alt="hhh" />
+            <h3 className="skills__name">TypeScript</h3>
+          </div>
+          <div className="skills__Itm" data-aos="fade-up"
+     data-aos-delay="550"  >
             <img src={node} alt="hhh" />
             <h3 className="skills__name">NodeJs</h3>
           </div>
 
           <div className="skills__Itm" data-aos="fade-up"
-     data-aos-delay="550"  >
+     data-aos-delay="700"  >
             <img src={js} alt="hhh" />
             <h3 className="skills__name">JavaScript</h3>
           </div>
-
           <div className="skills__Itm" data-aos="fade-up"
-      data-aos-delay="700"  >
+      data-aos-delay="850"  >
+            <img src={flutter} alt="hhh" />
+            <h3 className="skills__name">Flutter</h3>
+          </div>
+          <div className="skills__Itm" data-aos="fade-up"
+      data-aos-delay="1000"  >
             <img src={figma} alt="hhh" />
             <h3 className="skills__name">Figma</h3>
           </div>
@@ -183,7 +193,7 @@ const Skills = () => {
 
             <div className="top__skills"  >
               {/* <img src={designLog} alt="hhh" /> */}
-              <span className="skill__name">Designer</span>
+              <span className="skill__name">Design</span>
               <div className="skills__levels" style={backgroundStyle3}>
                 <span
                   className="skill__value"

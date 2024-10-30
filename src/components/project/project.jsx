@@ -8,20 +8,21 @@ import "swiper/css/navigation";
 import "./project.css";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-import slide_image_1 from "../../asset/wwe.png";
-import slide_image_2 from "../../asset/SsProject.png";
-import slide_image_3 from "../../asset/showWork.png";
-import slide_image_4 from "../../asset/backVetrian.png";
+import weMO from "../../asset/wwe.png";
+import smartSkillsMo from "../../asset/SsProject.png";
+import showorkMo from "../../asset/showWork.png";
+import apiVetrina from "../../asset/backVetrian.png";
+import GAG from "../../asset/giveAndget.png";
 
 function Project() {
   return (
-    <div  data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" >
-
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <section id="portfolio" className="boxWithBAck">
         <div className="container ">
           <h2 className="section__title">Portfolio</h2>
-          <span className="section__subtitle">I am glad to share with you some of my Projects</span>
+          <span className="section__subtitle">
+            I am glad to share with you some of my Projects
+          </span>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -45,36 +46,6 @@ function Project() {
           >
             <SwiperSlide>
               <div className="descProject displayNN">
-                <h2 className="project__title">Work Show</h2>
-                <p className="project__subtitle">
-                  A web application dedicated to showcasing professional
-                  opportunities and employee portfolios. It provides an
-                  intuitive platform for easily presenting skills and
-                  achievements while streamlining the search for suitable career
-                  opportunities.
-                </p>
-                <div className="techOutils">
-                  <span className="itemTech">Angular</span>
-                  <span className="itemTech">NodeJs</span>
-                  <span className="itemTech">MongoDB</span>
-                  <span className="itemTech">Figma</span>
-                </div>
-              </div>
-              <div className="cardProject">
-                <img src={slide_image_3} alt="slide_image" />
-                {/* <div className="info">
-                  <h1> Mountain</h1>
-                  <p>
-                    {" "}
-                    Lorem Ipsum is simply dummy text from the printing and
-                    typeseting industry
-                  </p>
-                  <button>Read More </button>
-                </div> */}
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="descProject displayNN">
                 <h2 className="project__title">SmartExam</h2>
                 <p className="project__subtitle">
                   This web application simplifies school and exam management,
@@ -92,9 +63,40 @@ function Project() {
                 </div>
               </div>
               <div className="cardProject">
-                <img src={slide_image_2} alt="slide_image" />
+                <img src={smartSkillsMo} alt="slide_image" />
               </div>
             </SwiperSlide>
+            <SwiperSlide>
+              <div className="descProject displayNN">
+                <h2 className="project__title">Work Show</h2>
+                <p className="project__subtitle">
+                  A web application dedicated to showcasing professional
+                  opportunities and employee portfolios. It provides an
+                  intuitive platform for easily presenting skills and
+                  achievements while streamlining the search for suitable career
+                  opportunities.
+                </p>
+                <div className="techOutils">
+                  <span className="itemTech">Angular</span>
+                  <span className="itemTech">NodeJs</span>
+                  <span className="itemTech">MongoDB</span>
+                  <span className="itemTech">Figma</span>
+                </div>
+              </div>
+              <div className="cardProject">
+                <img src={showorkMo} alt="slide_image" />
+                {/* <div className="info">
+                  <h1> Mountain</h1>
+                  <p>
+                    {" "}
+                    Lorem Ipsum is simply dummy text from the printing and
+                    typeseting industry
+                  </p>
+                  <button>Read More </button>
+                </div> */}
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className="descProject displayNN">
                 <h2 className="project__title">We</h2>
@@ -114,9 +116,34 @@ function Project() {
                 </div>
               </div>
               <div className="cardProject">
-                <img src={slide_image_1} alt="slide_image" />
+                <img src={weMO} alt="slide_image" />
               </div>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="descProject displayNN">
+                <h2 className="project__title">Give&Get</h2>
+                <p className="project__subtitle">
+                  A web application for freelancers to connect, find
+                  jobs, and manage projects easily. With tools for communication
+                  and project management, it simplifies workflows and promotes
+                  clear collaboration between freelancers and clients. The
+                  platform helps freelancers find quality projects and build
+                  strong client relationships.
+                </p>
+                <div className="techOutils">
+                  <span className="itemTech">ReactJs</span>
+                  <span className="itemTech">NodeJs</span>
+
+                  <span className="itemTech">Bootstrap</span>
+                  <span className="itemTech">MongoDB</span>
+                </div>
+              </div>
+              <div className="cardProject">
+                <img src={GAG} alt="slide_image" />
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className="descProject displayNN">
                 <h2 className="project__title">API Optimization Module</h2>
@@ -135,7 +162,7 @@ function Project() {
                 </div>
               </div>
               <div className="cardProject">
-                <img src={slide_image_4} alt="slide_image" />
+                <img src={apiVetrina} alt="slide_image" />
               </div>
             </SwiperSlide>
 

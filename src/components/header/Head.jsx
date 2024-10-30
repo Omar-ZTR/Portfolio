@@ -68,6 +68,14 @@ const Head = () => {
             </li>
 
             <li className="nav__item">
+              <a href="#resume" onClick={() => setActiveNav('#resume')}
+                className={activeNav === "#resume" ?
+                  "nav__link active-link" : "nav__link"}>
+                <i className="uil uil-user nav__icon"></i>Resume
+              </a>
+            </li>
+
+            <li className="nav__item">
               <a href="#skills" onClick={() => setActiveNav('#skills')}
                 className={activeNav === "#skills" ?
                   "nav__link active-link" : "nav__link"}>
