@@ -1,6 +1,6 @@
 import React from "react";
 
-function Experience() {
+function Experience({transexp}) {
   return (
     <div>
       {" "}
@@ -19,23 +19,22 @@ function Experience() {
           <div className="qulafiFlex">
            <div className="date-col"  data-aos="fade-right"
       data-aos-delay="150">
-            <h4>SmartSkills </h4>
+            <h4>{transexp.exp1.local} </h4>
             <div className="qualification__calender">
               {/* <i className="uil uil-calendar-alt"></i> */}
-              March to July 2024
+              {transexp.exp1.date}
             </div>
           </div>
 
           <div className="qualification-info"  data-aos="fade-right"
       data-aos-delay="300">
-            <h3 className="qualification__title"> End-of-Study Internship </h3>
+            <h3 className="qualification__title"> {transexp.exp1.title} </h3>
             <span className="qualification__subtitle">
               <ul className="listExp">
                 <li>
-                  Design and development of a web application for exam
-                  management.
+                {transexp.exp1.mission}
                 </li>
-                <li>Technologies: Angular, NodeJs, MySQL, Figma.</li>
+                <li>{transexp.exp1.tech}</li>
               </ul>
             </span>
           </div>  
@@ -53,23 +52,22 @@ function Experience() {
           <div className="qulafiFlex">
              <div className="date-col"  data-aos="fade-right"
       data-aos-delay="450">
-            <h4>Wind Consulting tunis</h4>
+            <h4>{transexp.exp2.local}</h4>
             <div className="qualification__calender">
               {/* <i className="uil uil-calendar-alt"></i> */}
-              July 2023
+              {transexp.exp2.date}
             </div>
           </div>
       
           <div className="qualification-info"  data-aos="fade-right"
       data-aos-delay="600">
-            <h3 className="qualification__title"> Summer Internship </h3>
+            <h3 className="qualification__title"> {transexp.exp2.title}</h3>
             <span className="qualification__subtitle">
               <ul className="listExp">
                 <li>
-                  Develop a module to optimize the performance of API call
-                  systems.
+                {transexp.exp2.mission}
                 </li>
-                <li>Technologies: NodeJs, MySQL.</li>
+                <li>{transexp.exp2.tech}</li>
               </ul>
             </span>
           </div>
@@ -86,22 +84,22 @@ function Experience() {
           <div className="qulafiFlex">
             <div className="date-col"  data-aos="fade-right"
       data-aos-delay="750" >
-            <h4>G-Dev sousse</h4>
+            <h4>{transexp.exp3.local}</h4>
             <div className="qualification__calender">
               {/* <i className="uil uil-calendar-alt"></i> */}
-              February to June 2021
+              {transexp.exp3.date}
             </div>
           </div>
           
           <div className="qualification-info"  data-aos="fade-right"
       data-aos-delay="900" >
-            <h3 className="qualification__title"> End-of-Study Internship </h3>
+            <h3 className="qualification__title"> {transexp.exp3.title} </h3>
             <span className="qualification__subtitle">
               <ul className="listExp">
                 <li>
-                  Creation of a web application dedicated to job postings.
+                {transexp.exp3.mission}
                 </li>
-                <li>Technologies: Reactjs, MongoDB, NodeJs, Figma.</li>
+                <li>{transexp.exp3.tech}</li>
               </ul>
             </span>
           </div> 

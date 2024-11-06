@@ -189,8 +189,7 @@
   transform: rotateX(5deg) rotateZ(40deg);
   /* transform-style: preserve-3d; */
   border-radius: 32px;
-  box-shadow: 1px 1px 0 1px #f9f9fb00, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-    28px 28px 28px 0 rgba(34, 33, 81, 0.036);
+  box-shadow: 1px 1px 0 1px #f9f9fb00, -1px 0 28px 0 rgb(34 33 81 / 0%), 28px 28px 28px 0 var(--shadowColor);
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
 
 }
@@ -223,7 +222,7 @@
  
   border-radius: 32px;
   box-shadow: 1px 1px 0 1px #f9f9fb00, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-  28px 28px 28px 0 rgba(17, 17, 17, 0.056);
+  28px 28px 28px 0 var(--shadowColor);
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
 }
 
@@ -408,7 +407,7 @@ justify-content: center;
 }
 .skil__icon {
   font-size: 1.5rem;
-  color: white;
+
   margin-bottom: var(--mb-0-5);
   transform: translateY(5px);
 }
@@ -417,7 +416,7 @@ justify-content: center;
 }
 .skil2__icon {
   font-size: 1.5rem;
-  color: white;
+ 
   margin-bottom: var(--mb-0-5);
   transform: translateY(5px);
 }
@@ -481,7 +480,7 @@ justify-content: center;
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  background-color: #ededed;
+  background-color: var(--body-color);
 }
 
 .skill__value {
@@ -493,7 +492,7 @@ justify-content: center;
 .skill__name {
   font-size: 30px;
   font-weight: 500;
-  color: #606060;
+ 
 }
 
 /*=============== BREAKPOINTS ===============*/

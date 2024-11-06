@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "myName": "Omar Zouiter",
+    "description": "Welcome to Omar Zouiter's website"
+  },
+  "data": {
+    "myName": "Omar Zouiter",
+    "text":"I'm a passionate and motivated software developer specializing in Full Stack JavaScript, with knowledge in various other technologies. I’m always excited to dive into new frameworks and tools that capture my interest!",
+    "wordFix": "I'M",
+    "word1": "Web Developer",
+    "word2": "Front-end Developer",
+    "word3": "back-end Developer",
+    "word4": "Fullstack Developer",
+    "word5": "mobile Developer",
+    "textBtn": "Say hello"
+  },
+  "about": {
+    "title": "About me",
+    "subTitle": "My introduction",
+    "text": "I am both a software engineer and a front-end developer with expertise in React, Angular, Java, JavaScript, and TypeScript. Driven by a strong passion for web application development, I bring a blend of analytical skills, attention to detail, and a dedicated work ethic to every project. I am eager to expand my technical and interpersonal skills and am open to job opportunities that align with my experience and interests.",
+    "textBtn": " Download CV",
+    "info1Title": "Software Engineering",
+    "info1Subitle": "full-stack web developer",
+    "info2Title": "Tunisian",
+    "info2Subitle": "Tunis Monastir-Bekalta",
+    "info3Title": "Freelancer",
+    "info3Subitle": "7 + Projects"
+  },
+  "service": {
+    "title": "Services",
+    "subTitle": "What i offer",
+    "text": "As a Full Stack Web and Mobile Developer and UI/UX Designer, specialize in building responsive, flexible, and high-performance websites and applications with a strong focus on UI/UX design. Leveraging a diverse skill set, I deliver solutions that not only meet design and functionality requirements but also provide exceptional user experiences.",
+    "servWeb": "Web App Development",
+    "servDes": "Ui/Ux Designer",
+    "servMob": "Mobile App Development"
+  },
+  "resume": {
+    "title": "Resume",
+    "subTitle": "My personal journey",
+    "textBtnEx": "Experience",
+    "textBtnEd": "Education",
+    "education": {
+      "edu1": {
+        "title": "National Engineering Diploma",
+        "subTitle": "Software engineering",
+        "local": "EPI-Digital School Sousse",
+        "date": "2021 - Present"
+      },
+      "edu2": {
+        "title": " National Diploma of Applied License",
+        "subTitle": "Industrial Computing",
+        "local": " Higher Institute of Applied Sciences and Technologies of Sousse",
+        "date": " 2017 - 2021"
+      },
+      "edu3": {
+        "title": "Bachelor",
+        "subTitle": "Computer Science",
+        "local": "High school Bekalta",
+        "date": " 2017"
+      }
+    },
+    "experience": {
+      "exp1": {
+        "title": "End-of-Study Internship",
+        "mission": " Design and development of a web application for exam management.",
+        "tech": "Technologies: Angular, NodeJs, MySQL, Figma.",
+        "local": "SmartSkills",
+        "date": "March to July 2024"
+      },
+      "exp2": {
+        "title": "Summer Internship",
+        "mission": "Develop a module to optimize the performance of API call systems.",
+        "tech": "Technologies: NodeJs, MySQL.",
+        "local": "Wind Consulting tunis",
+        "date": "July 2023"
+      },
+      "exp3": {
+        "title": "End-of-Study Internship",
+        "mission": " Creation of a web application dedicated to job postings.",
+        "tech": "Technologies: Reactjs, MongoDB, NodeJs, Figma.",
+        "local": "G-Dev sousse",
+        "date": "February to June 2021"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subTitle": "My technical level",
+    "text": "As a junior Full Stack Web Developer, I specialize in a variety of technologies, with a strong emphasis on writing clean, efficient code. Through of experience as a freelancer, I've demonstrated flexibility and a commitment to delivering top-notch solutions. In addition, my expertise in UI/UX design enables me to create visually appealing and user-friendly experiences.",
+    "skil1": "Frontend",
+    "skil2": "Backend",
+    "skil3": "Design",
+    "show1": "Show Less",
+    "show2": "Show More"
+  },
+  "project": {
+    "title": "Portfolio",
+    "subTitle": " I am glad to share with you some of my Projects",
+    "pro1": {
+      "title": "SmartExam",
+      "text": "This web application simplifies school and exam management, offering efficient exam scheduling, grade consultation, and streamlined coordination between teachers and students. It enhances productivity and improves communication within educational institutions.",
+      "tech1": "Angular",
+      "tech2": "NodeJs",
+      "tech3": "MySQL",
+      "tech4": "TypeScript"
+    },
+    "pro2": {
+      "title": "Work Show",
+      "text": "A web application dedicated to showcasing professional opportunities and employee portfolios. It provides an intuitive platform for easily presenting skills and achievements while streamlining the search for suitable career opportunities.",
+      "tech1": "Angular",
+      "tech2": "NodeJs",
+      "tech3": "MongoDB"
+    },
+    "pro3": {
+      "title": "We",
+      "text": "This mobile carpooling app design in Figma focuses on user-friendly navigation and a seamless ride-sharing experience. It offers intuitive layouts for finding or offering rides, trip details, and communication. Key features include trip scheduling, real-time tracking, and user ratings,all designed for simplicity and efficiency.",
+      "tech1": "Figma"
+    },
+    "pro4": {
+      "title": "Give&Get",
+      "text": "A web application for freelancers to connect, find jobs, and manage projects easily. With tools for communication and project management, it simplifies workflows and promotes clear collaboration between freelancers and clients. The platform helps freelancers find quality projects and build strong client relationships.",
+      "tech1": "ReactJs",
+      "tech2": "NodeJs",
+      "tech3": "Bootstrap",
+      "tech4": "MongoDB"
+    },
+    "pro5": {
+      "title": "API Optimization Module",
+      "text": "A task to develop a module aimed at optimizing API call system performance by enhancing response times, reducing latency, and improving efficiency. The objective is to ensure faster, more reliable data retrieval and boost scalability under high-demand conditions.",
+      "tech1": "Angular",
+      "tech2": "NodeJs",
+      "tech3": "MongoDB"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subTitle": "Contact Me",
+    "text": "Write me your project",
+    "inputName": "Insert your name",
+    "inputEmail": "Insert your email",
+    "inputProject": "Write your project",
+    "btn": "Yeah Send"
+  }
+}

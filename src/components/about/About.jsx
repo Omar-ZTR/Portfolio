@@ -1,10 +1,10 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../asset/sa.png";
-import CV from "../../asset/John-Cv.pdf";
+
 import Info from "./Info";
 
-const About = () => {
+const About = ({ translations }) => {
   return (
     <section
       className="about section"
@@ -12,24 +12,22 @@ const About = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My introduction</span>
+      <h2 className="section__title">{translations.title}</h2>
+      <span className="section__subtitle">{translations.subTitle}</span>
 
       <div className="about__container container grid">
         <div className="about__data">
           <p className="about__description">
-            {/* <span className="tagss">&lt;</span>P
-            <span className="tagss">&gt;</span> */}
-            Omar Zouiter is both a software engineer and front-end developer
-            with expertise in React, Angular, Java, JavaScript, and TypeScript.
-            Driven by a strong passion for web application development, I bring
-            a blend of analytical skills, attention to detail, and a dedicated
-            work ethic to every project. I am always keen to expand my technical
-            and interpersonal knowledge and am open to job opportunities that
-            align with my skills and interests.
+          {translations.text}
           </p>
-          <a download="" href={CV} className="button button--flex">
-            Download CV
+          <a
+            href="https://drive.google.com/file/d/1qKsquXkzsJS565xS9ODgVwn1CFy9GQ6-/view?usp=sharing"
+            download="Omar_Zouiter_CV.pdf"
+            className="button button--flex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {translations.textBtn}
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -58,10 +56,10 @@ const About = () => {
           </a>
         </div>
         <img src={AboutImg} alt="" className="about__img" />
-        <Info />
+        <Info trans={translations} />
       </div>
     </section>
   );
-};
+}; 
 
 export default About;

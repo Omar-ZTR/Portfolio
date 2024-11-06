@@ -27,7 +27,7 @@ import angularHover from "../../asset/angularHover.png";
 import cssHover from "../../asset/cssHover.png";
 import jsHover from "../../asset/javascriptHover.png";
 
-const Frontend = () => {
+const Frontend = ({trans}) => {
 
   const [showAllSkills, setShowAllSkills] = useState(false);
   const [isshow, setIsshow] = useState(false);
@@ -71,7 +71,7 @@ const Frontend = () => {
       <img className="imgHover imgHover3" src={angularHover} alt="hhh" />
       <img className="imgHover imgHover4" src={cssHover} alt="hhh" />
       <img className="imgHover imgHover5" src={mysqlHover} alt="hhh" />
-          {showAllSkills ? 'Less Skills  ' : 'More Skills '}<i className={`${isTop ? 'bx bx-chevrons-down skil__icon' : 'bx bx-chevrons-up skil2__icon'}`}></i>
+          {showAllSkills ? trans.show1 : trans.show1}<i className={`${isTop ? 'bx bx-chevrons-down skil__icon' : 'bx bx-chevrons-up skil2__icon'}`}></i>
         </a>
       </div>
       <div id="skilBox" className="skills__box">

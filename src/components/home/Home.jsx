@@ -2,9 +2,9 @@ import React from 'react';
 import "./home.css";
 import Social from './Social';
 import Data from './Data';
-import ScrollDown from './ScrollDown';
+// import ScrollDown from './ScrollDown';
 
-const Home = () => {
+const Home = ({ translations }) => {
     return (
         <div className='shap'>
         
@@ -13,9 +13,10 @@ const Home = () => {
             <div className="shape"></div>
                 <div className="home__content grid">
                     <Social />
-                    <div className="home__img">
+                    <div className="home__img" data-aos="zoom-in-left">
+
                     </div>
-                    <Data />
+                    <Data trans ={ translations } />
 
                 </div>
                 {/* <ScrollDown /> */}

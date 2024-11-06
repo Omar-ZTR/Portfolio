@@ -22,26 +22,29 @@ const Footer = () => {
                 <div className="footer__social">
                    
                     {/* target="_blank" */}
-                    <a href="https://www.instagram.com/_____omr____/"
+                    <a href="https://www.instagram.com/_____omr____/" target="_blank"
+   rel="noopener noreferrer"
                         className="footer__social-link" >
                         <i class="bx bxl-instagram"></i>
                     </a>
 
 
-                    <a href="https://x.com/OmrZtr"
+                    <a href="https://x.com/OmrZtr" target="_blank"
+   rel="noopener noreferrer"
                         className="footer__social-link" >
                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 	<path fill="currentColor" d="M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5zM3 2h5v2h-5zM16 20h5v2h-5zM18.5 2h3.5L5 22h-3.5z"></path>
 </svg>
                     </a>
-                    <a href="https://github.com/Omar-ZTR"
+                    <a href="https://github.com/Omar-ZTR" target="_blank"
+   rel="noopener noreferrer"
                         className="footer__social-link">
                         <i class="bx bxl-github"></i>
                       
                     </a>
                 </div>
 
-                <span className="footer__copy">&#169; OmarZouiter.
+                <span className="footer__copy">&#169; 2024 Omar.
                     All rigths reserved</span>
             </div>
         </footer>

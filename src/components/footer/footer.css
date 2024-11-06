@@ -1,6 +1,5 @@
 .footer {
-    background-color: var(--container-color);
-    border-radius: 1px solid rgbia(0, 0, 0, 0.1);
+    box-shadow: inset 0px -12rem 20px var( --nav-color);
   margin-bottom: 0;
 }
 

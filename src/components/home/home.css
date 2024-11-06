@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* mix-blend-mode: multiply; */
-    box-shadow: 1px -20px 85px -6px rgb(243 221 210) inset;
+    /* box-shadow: 1px -20px 85px -6px rgb(243 221 210) inset; */
     right: 0;
     object-fit: cover;
 }
@@ -252,7 +252,7 @@
   
     25%{
         transform: translateY(-100%);
-        width: max-content;
+        
         
     }
     35%{

@@ -11,7 +11,7 @@ import Ts from "../../asset/TS.png";
 
 // import { Flat, Heat, Nested } from '@alptugidin/react-circular-progress-bar'
 
-const Skills = () => {
+const Skills = ({translations}) => {
   // let levelProgress = document.querySelector(".skills__levels");
   // const skillValue = document.querySelector(".skill__value");
   const [startVal1, setStartVal1] = useState(0);
@@ -111,17 +111,12 @@ const Skills = () => {
     >
       {/* <Qualification/> */}
       <section className="skills  " id="skills">
-        <h2 className="section__title">Skills</h2>
-        <span className="section__subtitle">My technical level</span>
+        <h2 className="section__title">{translations.title}</h2>
+        <span className="section__subtitle">{translations.subTitle}</span>
 
         {/* <h3>My Advantages</h3> */}
         <p>
-          As a junior Full Stack Web Developer, I specialize in a variety of
-          technologies, with a strong emphasis on writing clean, efficient code.
-          Through of experience as a freelancer, I've demonstrated flexibility
-          and a commitment to delivering top-notch solutions. In addition, my
-          expertise in UI/UX design enables me to create visually appealing and
-          user-friendly experiences.
+        {translations.text}
         </p>
         <div className="TopSkill" 
      >
@@ -171,7 +166,7 @@ const Skills = () => {
           <div className="face__Skills">
             <div className="top__skills"  >
               {/* <img src={frontendLog} alt="hhh" /> */}
-              <span className="skill__name">Frontend </span>
+              <span className="skill__name">  {translations.skil1} </span>
               <div className="skills__levels" style={backgroundStyle1}>
                 <span
                   className="skill__value"
@@ -182,7 +177,7 @@ const Skills = () => {
 
             <div className="top__skills"  >
               {/* <img src={backendLog} alt="hhh" /> */}
-              <span className="skill__name">Backend </span>
+              <span className="skill__name">  {translations.skil2} </span>
               <div className="skills__levels" style={backgroundStyle2}>
                 <span
                   className="skill__value"
@@ -193,7 +188,7 @@ const Skills = () => {
 
             <div className="top__skills"  >
               {/* <img src={designLog} alt="hhh" /> */}
-              <span className="skill__name">Design</span>
+              <span className="skill__name">  {translations.skil3}</span>
               <div className="skills__levels" style={backgroundStyle3}>
                 <span
                   className="skill__value"
@@ -212,7 +207,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skills__container  grid">
-          <Frontend />
+          <Frontend trans= {translations} />
     
         </div>
       </section>

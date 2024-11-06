@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./qualification.css";
 import Education from "./Education";
 import Experience from "./Experience";
-const Qualification = () => {
+const Qualification = ({translations}) => {
   const [toggleState, setToggleState] = useState(2);
 
   const toggleTab = (index) => {
@@ -14,8 +14,8 @@ const Qualification = () => {
     <div className="boxWithBAck  "  data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"  >
       <section id="resume">
-        <h2 className="section__title">Resume</h2>
-        <span className="section__subtitle">My personal journey</span>
+        <h2 className="section__title">{translations.title}</h2>
+        <span className="section__subtitle">{translations.subTitle}</span>
 
         <div className="qualification__container container">
           <div className="qualification__tabs">
@@ -32,7 +32,7 @@ const Qualification = () => {
                 className="uil uil-briefcase-alt
                       qualification__icon"
               ></i>
-              Experience
+            {translations.textBtnEx}
             </button>
             <button
               className={
@@ -46,12 +46,12 @@ const Qualification = () => {
                 className="uil uil-graduation-cap
                   qualification__icon"
               ></i>
-              Education
+            {translations.textBtnEd}
             </button>
           </div>
           <div className="qualification__sections">
-            {toggleState === 1 && <Education />}
-            {toggleState === 2 && <Experience />}
+            {toggleState === 1 && <Education transedu= {translations.education} />}
+            {toggleState === 2 && <Experience transexp= {translations.experience} />}
           </div>
         </div>
       </section>

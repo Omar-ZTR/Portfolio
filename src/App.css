@@ -7,12 +7,19 @@
   --glow-color: hsl(33, 68%, 52%);
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
+
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 30%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
+  --gradient-color1: hsla(15, 100%, 85%, 0.7); /* #ffc7abaf in HSLA */
+  --gradient-color2: hsl(0, 0%, 88%); 
+  --item-color: hsl(0, 17%, 98%);
+  --shadowColor: hsla(0, 0%, 7%, 0.055);
+  --nav-color: #fafafa7d;
+  --box-card:#e8e8e8;
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
@@ -49,7 +56,20 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
-
+.dark-mode {
+  /* Dark Mode Colors */
+  --box-card:#3c3c3c;
+  --shadowColor: #acaaaa0e;
+  --item-color: hsl(0deg 0.21% 23.04%);
+  --gradient-color1: hsl(220.91deg 59.9% 10.84%);
+    --gradient-color2: hsl(0, 0%, 2%); 
+    --title-color-dark: hsl(var(--hue), var(--sat), 99%);
+    --nav-color: #3636367d;
+    --title-color: hsl(var(--hue), var(--sat), 80%);
+  --text-color: hsl(var(--hue), var(--sat), 90%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 15%);
+}
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -181,7 +201,7 @@ textarea {
 body {
   /* background: -webkit-linear-gradient(to Bottom, #fb9a6a, #e2e2e2)
    Chrome 10-25, Safari 5.1-6; */
-background-image: radial-gradient(circle, #ffc7abaf, #e2e2e2);
+background-image: radial-gradient(circle, var(--gradient-color1), var(--gradient-color2));
   background-attachment: fixed;
   color: var(--text-color);
 }
@@ -226,6 +246,19 @@ img {
 }
 .ss{
   display: block;
+}
+.modeSwitch{
+  position: fixed;
+  top: 0.7rem;
+  right: 1rem;
+  z-index: 9999;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: var(--title-color);
+  background: var(--body-color);
+  box-shadow: -5px 3px 20px -5px var(--title-color);
 }
 .gridd{
   max-width: 999px;

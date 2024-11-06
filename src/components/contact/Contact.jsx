@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
-const Contact = () => {
+const Contact = ({translations}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -23,8 +23,8 @@ const Contact = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title">{translations.title}</h2>
+      <span className="section__subtitle">{translations.subTitle}</span>
 
       <div className="contact__container container grid">
         <div className="contact__info ">
@@ -49,14 +49,14 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">{translations.text}</h3>
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder={translations.inputName}
               />
             </div>
             <div className="contact__form-div">
@@ -64,7 +64,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder={translations.inputEmail}
               />
             </div>
 
@@ -74,11 +74,11 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Write your project"
+                placeholder={translations.inputProject}
               />
             </div>
             <button className="button button--flex">
-              Yeah Send
+            {translations.btn}
               <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

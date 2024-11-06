@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const Data = () => {
+const Data = ({ trans }) => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Omar Zouiter
+      { trans.myName }
         <svg
           width="36"
           height="36"
@@ -63,28 +63,23 @@ const Data = () => {
       {/* <h3 className="home__subtitle" >Web/Mobile Developer</h3> */}
 
       <div class="wrapper">
-        <h3>I'M</h3>
+        <h3>{ trans.wordFix }</h3>
         <div class="words">
           <h3>
-         
-            <span className="rotating">Web Developer </span>
+            <span className="rotating">{ trans.word1 } </span>
           </h3>
           <h3>
-          
-            <span className="rotating">Front-end Developer</span>
+            <span className="rotating">{ trans.word2 }</span>
           </h3>
           <h3>
-           
-            <span className="rotating">back-end Developer</span>
+            <span className="rotating">{ trans.word3 }</span>
           </h3>
           <h3>
-            
-            <span className="rotating">Fullstack Developer</span>
+            <span className="rotating">{ trans.word4 }</span>
           </h3>
 
           <h3>
-            
-            <span className="rotating">mobile Developer</span>
+            <span className="rotating">{ trans.word5 }</span>
           </h3>
         </div>
         {/* <h3>Developer</h3> */}
@@ -95,12 +90,10 @@ const Data = () => {
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
-        Software engineer specializing in web development. Enthusiastic and
-        motivated, I am open to opportunities to enhance my technical and
-        analytical skills.
+       { trans.text }
       </p>
       <a href="#contact" className="button button--flex">
-        Say hello
+      { trans.textBtn }
         <svg
           class="button__icon"
           xmlns="http://www.w3.org/2000/svg"

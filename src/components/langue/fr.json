@@ -1,0 +1,154 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "resume": "CV",
+        "skills": "Compétences",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home": {
+        "myName": "Omar Zouiter",
+        "description": "Bienvenue sur le site web d'Omar Zouiter"
+    },
+    "data": {
+
+        "myName": "Zouiter Omar ",
+        "text":"Je suis un développeur logiciel passionné et motivé, spécialisé en JavaScript Full Stack, avec des connaissances dans diverses autres technologies. J’ai toujours hâte de plonger dans de nouveaux frameworks et outils qui captent mon intérêt !",
+        "wordFix": "JE SUIS",
+        "word1": "Développeur Web",
+        "word2": "Développeur Front-end",
+        "word3": "Développeur Back-end",
+        "word4": "Développeur Fullstack",
+        "word5": "Développeur Mobile",
+        "textBtn": "Dites bonjour"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "subTitle": "Mon introduction",
+        "text": "Je suis ingénieur en logiciel et développeur front-end avec une expertise en React, Angular, Java, JavaScript, et TypeScript. Motivé par une forte passion pour le développement d'applications web, j'apporte des compétences analytiques, une attention aux détails, et une éthique de travail dédiée à chaque projet. Je suis prêt à élargir mes compétences techniques et interpersonnelles et ouvert à des opportunités professionnelles en accord avec mon expérience et mes intérêts.",
+        "textBtn": "Télécharger CV",
+        "info1Title": "Ingénierie Logicielle",
+        "info1Subitle": "Développeur web full-stack",
+        "info2Title": "Tunisien",
+        "info2Subitle": "Tunis Monastir-Bekalta",
+        "info3Title": "Freelance",
+        "info3Subitle": "7 + Projets"
+    },
+    "service": {
+        "title": "Services",
+        "subTitle": "Ce que je propose",
+        "text": "En tant que développeur Full Stack Web et Mobile et concepteur UI/UX, je suis spécialisé dans la création de sites web et applications réactifs, flexibles et performants avec un fort accent sur le design UI/UX. Grâce à un ensemble de compétences diversifiées, je fournis des solutions qui répondent aux exigences de conception et de fonctionnalité tout en offrant des expériences utilisateur exceptionnelles.",
+        "servWeb": "Développement d'applications Web",
+        "servDes": "Designer UI/UX",
+        "servMob": "Développement d'applications mobiles"
+    },
+    "resume": {
+        "title": "CV",
+        "subTitle": "Mon parcours personnel",
+        "textBtnEx": "Expérience",
+        "textBtnEd": "Éducation",
+        "education": {
+            "edu1": {
+                "title": "Diplôme National d'Ingénieur",
+                "subTitle": "Ingénierie Logicielle",
+                "local": "École EPI-Digital Sousse",
+                "date": "2021 - Présent"
+            },
+            "edu2": {
+                "title": "Diplôme National de Licence Appliquée",
+                "subTitle": "Informatique Industrielle",
+                "local": "Institut Supérieur des Sciences Appliquées et Technologies de Sousse",
+                "date": "2017 - 2021"
+            },
+            "edu3": {
+                "title": "Baccalauréat",
+                "subTitle": "Informatique",
+                "local": "Lycée de Bekalta",
+                "date": "2017"
+            }
+        },
+        "experience": {
+            "exp1": {
+                "title": "Stage de Fin d'Études",
+                "mission": "Conception et développement d'une application web pour la gestion des examens.",
+                "tech": "Technologies : Angular, NodeJs, MySQL, Figma.",
+                "local": "SmartSkills",
+                "date": "Mars à Juillet 2024"
+            },
+            "exp2": {
+                "title": "Stage d'Été",
+                "mission": "Développement d'un module pour optimiser la performance des systèmes d'appels API.",
+                "tech": "Technologies : NodeJs, MySQL.",
+                "local": "Wind Consulting Tunis",
+                "date": "Juillet 2023"
+            },
+            "exp3": {
+                "title": "Stage de Fin d'Études",
+                "mission": "Création d'une application web dédiée aux offres d'emploi.",
+                "tech": "Technologies : Reactjs, MongoDB, NodeJs, Figma.",
+                "local": "G-Dev Sousse",
+                "date": "Février à Juin 2021"
+            }
+        }
+    },
+    "skills": {
+        "title": "Compétences",
+        "subTitle": "Mon niveau technique",
+        "text": "En tant que développeur web Full Stack junior, je me spécialise dans une variété de technologies, avec un fort accent sur la rédaction d'un code propre et efficace. Grâce à mon expérience en tant que freelance, j'ai démontré de la flexibilité et un engagement à fournir des solutions de qualité. De plus, mon expertise en conception UI/UX me permet de créer des expériences visuellement attrayantes et conviviales.",
+        "skil1": "Frontend",
+        "skil2": "Backend",
+        "skil3": "Design",
+        "show1": "Voir moins",
+        "show2": "Voir plus"
+    },
+    "project": {
+        "title": "Portfolio",
+        "subTitle": "Je suis heureux de partager avec vous certains de mes projets",
+        "pro1": {
+            "title": "SmartExam",
+            "text": "Cette application web simplifie la gestion des écoles et des examens, offrant une planification efficace des examens, la consultation des notes, et une coordination optimisée entre enseignants et étudiants. Elle améliore la productivité et favorise la communication au sein des établissements éducatifs.",
+            "tech1": "Angular",
+            "tech2": "NodeJs",
+            "tech3": "MySQL",
+            "tech4": "TypeScript"
+        },
+        "pro2": {
+            "title": "Work Show",
+            "text": "Une application web dédiée à la présentation des opportunités professionnelles et des portfolios d'employés. Elle offre une plateforme intuitive pour présenter facilement ses compétences et réalisations tout en facilitant la recherche d'opportunités de carrière adaptées.",
+            "tech1": "Angular",
+            "tech2": "NodeJs",
+            "tech3": "MongoDB"
+        },
+        "pro3": {
+            "title": "We",
+            "text": "Cette application mobile de covoiturage conçue sous Figma se concentre sur une navigation conviviale et une expérience de partage de trajet fluide. Elle propose des mises en page intuitives pour trouver ou offrir des trajets, des détails de voyage et de la communication. Les principales fonctionnalités incluent la planification des trajets, le suivi en temps réel, et les évaluations des utilisateurs, conçus pour la simplicité et l'efficacité.",
+            "tech1": "Figma"
+        },
+        "pro4": {
+            "title": "Give&Get",
+            "text": "Une application web permettant aux freelances de se connecter, trouver des missions, et gérer leurs projets facilement. Avec des outils pour la communication et la gestion de projet, elle simplifie les workflows et favorise une collaboration claire entre freelances et clients. La plateforme aide les freelances à trouver des projets de qualité et à bâtir de solides relations avec les clients.",
+            "tech1": "ReactJs",
+            "tech2": "NodeJs",
+            "tech3": "Bootstrap",
+            "tech4": "MongoDB"
+        },
+        "pro5": {
+            "title": "Module d'Optimisation API",
+            "text": "Une mission pour développer un module visant à optimiser la performance des appels API en améliorant les temps de réponse, réduisant la latence, et augmentant l'efficacité. L'objectif est d'assurer une récupération de données plus rapide et plus fiable et de renforcer l'évolutivité en conditions de forte demande.",
+            "tech1": "Angular",
+            "tech2": "NodeJs",
+            "tech3": "MongoDB"
+        }
+    },
+    "contact": {
+        "title": "Me contacter",
+        "subTitle": "Contactez-moi",
+        "text": "Décrivez-moi votre projet",
+        "inputName": "Insérez votre nom",
+        "inputEmail": "Insérez votre email",
+        "inputProject": "Décrivez votre projet",
+        "btn": "Oui, envoyez"
+    }
+}
