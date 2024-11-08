@@ -247,11 +247,18 @@ img {
 .ss{
   display: block;
 }
-.modeSwitch{
+.switchBtn{
   position: fixed;
-  top: 0.7rem;
+  top: 5.5rem;
   right: 1rem;
   z-index: 9999;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.modeSwitch{
+  
+  
   width: 3rem;
   height: 3rem;
   font-size: 1.5rem;
@@ -260,6 +267,18 @@ img {
   background: var(--body-color);
   box-shadow: -5px 3px 20px -5px var(--title-color);
 }
+.langSwitch{
+  position: relative;
+ 
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: var(--title-color);
+  background: var(--body-color);
+  box-shadow: -5px 3px 20px -5px var(--title-color);
+}
+
 .gridd{
   max-width: 999px;
   /* display: grid; */
@@ -351,6 +370,9 @@ z-index: 2;
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
+  }
+  .switchBtn{
+    top: 1rem;
   }
   .gridd{
     margin: 1rem;

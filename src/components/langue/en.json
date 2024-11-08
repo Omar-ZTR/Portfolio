@@ -14,7 +14,7 @@
   },
   "data": {
     "myName": "Omar Zouiter",
-    "text":"I'm a passionate and motivated software developer specializing in Full Stack JavaScript, with knowledge in various other technologies. I’m always excited to dive into new frameworks and tools that capture my interest!",
+    "text": "I'm a passionate and motivated software developer specializing in Full Stack JavaScript, with knowledge in various other technologies. I’m always excited to dive into new frameworks and tools that capture my interest!",
     "wordFix": "I'M",
     "word1": "Web Developer",
     "word2": "Front-end Developer",
@@ -33,7 +33,8 @@
     "info2Title": "Tunisian",
     "info2Subitle": "Tunis Monastir-Bekalta",
     "info3Title": "Freelancer",
-    "info3Subitle": "7 + Projects"
+    "info3Subitle": "7 + Projects",
+    "cv": "https://drive.google.com/file/d/1kw5Ll1VVleOJ3F1RsIgl_0Gww12KX9bl/view?usp=sharing"
   },
   "service": {
     "title": "Services",
@@ -95,7 +96,7 @@
   "skills": {
     "title": "Skills",
     "subTitle": "My technical level",
-    "text": "As a junior Full Stack Web Developer, I specialize in a variety of technologies, with a strong emphasis on writing clean, efficient code. Through of experience as a freelancer, I've demonstrated flexibility and a commitment to delivering top-notch solutions. In addition, my expertise in UI/UX design enables me to create visually appealing and user-friendly experiences.",
+    "text": "As a junior Full Stack Web and Mobile Developer, I specialize in a variety of technologies, with a strong emphasis on writing clean, efficient code. Through my experience as a freelancer, I've demonstrated flexibility and a commitment to delivering top-notch solutions. Additionally, my expertise in UI/UX design enables me to create visually appealing and user-friendly experiences.",
     "skil1": "Frontend",
     "skil2": "Backend",
     "skil3": "Design",
@@ -136,9 +137,10 @@
     "pro5": {
       "title": "API Optimization Module",
       "text": "A task to develop a module aimed at optimizing API call system performance by enhancing response times, reducing latency, and improving efficiency. The objective is to ensure faster, more reliable data retrieval and boost scalability under high-demand conditions.",
-      "tech1": "Angular",
-      "tech2": "NodeJs",
-      "tech3": "MongoDB"
+     
+      "tech1": "NodeJs",
+      "tech2": "MySQL"
+      
     }
   },
   "contact": {

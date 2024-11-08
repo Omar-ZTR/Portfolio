@@ -34,7 +34,8 @@
         "info2Title": "Tunisien",
         "info2Subitle": "Tunis Monastir-Bekalta",
         "info3Title": "Freelance",
-        "info3Subitle": "7 + Projets"
+        "info3Subitle": "7 + Projets",
+        "cv":"https://drive.google.com/file/d/1D-Svr7kbaAxAaMiVK1Ii50Otjo0J3H7K/view?usp=sharing"
     },
     "service": {
         "title": "Services",
@@ -96,7 +97,7 @@
     "skills": {
         "title": "Compétences",
         "subTitle": "Mon niveau technique",
-        "text": "En tant que développeur web Full Stack junior, je me spécialise dans une variété de technologies, avec un fort accent sur la rédaction d'un code propre et efficace. Grâce à mon expérience en tant que freelance, j'ai démontré de la flexibilité et un engagement à fournir des solutions de qualité. De plus, mon expertise en conception UI/UX me permet de créer des expériences visuellement attrayantes et conviviales.",
+        "text": "En tant que développeur web et mobile Full Stack junior, je me spécialise dans une variété de technologies, avec un fort accent sur la rédaction de code propre et efficace. Grâce à mon expérience en tant que freelance, j'ai fait preuve de flexibilité et d'engagement pour fournir des solutions de qualité. De plus, mon expertise en conception UI/UX me permet de créer des expériences visuellement attrayantes et conviviales.",
         "skil1": "Frontend",
         "skil2": "Backend",
         "skil3": "Design",

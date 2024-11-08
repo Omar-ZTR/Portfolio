@@ -21,7 +21,7 @@ const About = ({ translations }) => {
           {translations.text}
           </p>
           <a
-            href="https://drive.google.com/file/d/1qKsquXkzsJS565xS9ODgVwn1CFy9GQ6-/view?usp=sharing"
+            href={translations.cv}
             download="Omar_Zouiter_CV.pdf"
             className="button button--flex"
             target="_blank"

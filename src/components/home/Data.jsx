@@ -63,7 +63,7 @@ const Data = ({ trans }) => {
       {/* <h3 className="home__subtitle" >Web/Mobile Developer</h3> */}
 
       <div class="wrapper">
-        <h3>{ trans.wordFix }</h3>
+       
         <div class="words">
           <h3>
             <span className="rotating">{ trans.word1 } </span>

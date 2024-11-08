@@ -55,7 +55,7 @@ function Project({translations}) {
                   <span className="itemTech"> {translations.pro1.tech2}</span>
                   <span className="itemTech"> {translations.pro1.tech3}</span>
                   <span className="itemTech"> {translations.pro1.tech4}</span>
-                  <span className="itemTech"> {translations.pro1.tech5}</span>
+                  
                 </div>
               </div>
               <div className="cardProject">
@@ -72,7 +72,7 @@ function Project({translations}) {
                   <span className="itemTech"> {translations.pro2.tech1}</span>
                   <span className="itemTech"> {translations.pro2.tech2}</span>
                   <span className="itemTech"> {translations.pro2.tech3}</span>
-                  <span className="itemTech"> {translations.pro2.tech4}</span>
+                
                 </div>
               </div>
               <div className="cardProject">
@@ -125,8 +125,7 @@ function Project({translations}) {
                 <div className="techOutils">
                   <span className="itemTech"> {translations.pro5.tech1}</span>
                   <span className="itemTech"> {translations.pro5.tech2}</span>
-                  <span className="itemTech"> {translations.pro5.tech3}</span>
-                  <span className="itemTech"> {translations.pro5.tech4}</span>
+               
                 </div>
               </div>
               <div className="cardProject">

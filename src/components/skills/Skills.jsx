@@ -9,87 +9,77 @@ import js from "../../asset/js.png";
 import flutter from "../../asset/flutter.png";
 import Ts from "../../asset/TS.png";
 
-// import { Flat, Heat, Nested } from '@alptugidin/react-circular-progress-bar'
 
 const Skills = ({translations}) => {
-  // let levelProgress = document.querySelector(".skills__levels");
-  // const skillValue = document.querySelector(".skill__value");
   const [startVal1, setStartVal1] = useState(0);
   const [startVal2, setStartVal2] = useState(0);
   const [startVal3, setStartVal3] = useState(0);
-  const [startVal4, setStartVal4] = useState(0);
+ 
+  const endVal1 = 90; 
+  const endVal2 = 80;
+  const endVal3 = 70;
+ 
+  const speed = 50; 
 
-  const endVal1 = 80;
-  const endVal2 = 70;
-  const endVal3 = 50;
-  const endVal4 = 10;
-  const speed = 90;
+  const [isSkillsVisible, setIsSkillsVisible] = useState(false);
 
   useEffect(() => {
-    const interval1 = setInterval(() => {
-      if (startVal1 < endVal1) {
-        setStartVal1((prevStartVal) => {
-          const newStartVal = prevStartVal + 1;
-          return newStartVal;
+    const section = document.querySelector("#skills");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsSkillsVisible(true);
+          }
         });
-      } else {
-        return () => clearInterval(interval1);
-      }
-      console.log("ss1ss", startVal1);
+      },
+      { threshold: 0.3 } 
+    );
+
+    if (section) observer.observe(section);
+
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isSkillsVisible) return;
+
+    const interval1 = setInterval(() => {
+      setStartVal1((prevStartVal) => {
+        if (prevStartVal < endVal1) return prevStartVal + 1;
+        clearInterval(interval1);
+        return prevStartVal;
+      });
     }, speed);
 
     const interval2 = setInterval(() => {
-      if (startVal2 < endVal2) {
-        setStartVal2((prevStartVal) => {
-          const newStartVal = prevStartVal + 1;
-          return newStartVal;
-        });
-      } else {
-        return () => clearInterval(interval2);
-      }
-      console.log("ss2ss", startVal2);
+      setStartVal2((prevStartVal) => {
+        if (prevStartVal < endVal2) return prevStartVal + 1;
+        clearInterval(interval2);
+        return prevStartVal;
+      });
     }, speed);
 
     const interval3 = setInterval(() => {
-      if (startVal3 < endVal3) {
-        setStartVal3((prevStartVal) => {
-          const newStartVal = prevStartVal + 1;
-          return newStartVal;
-        });
-      } else {
-        return () => clearInterval(interval3);
-      }
-      console.log("ss3ss", startVal3);
+      setStartVal3((prevStartVal) => {
+        if (prevStartVal < endVal3) return prevStartVal + 1;
+        clearInterval(interval3);
+        return prevStartVal;
+      });
     }, speed);
 
-    const interval4 = setInterval(() => {
-      if (startVal4 < endVal4) {
-        setStartVal4((prevStartVal) => {
-          const newStartVal = prevStartVal + 1;
-          return newStartVal;
-        });
-      } else {
-        return () => clearInterval(interval4);
-      }
-      console.log("sss4s", startVal4);
-    }, speed);
+  
 
     return () => {
       clearInterval(interval1);
       clearInterval(interval2);
       clearInterval(interval3);
-      clearInterval(interval4);
+     
     };
-  }, [
-    startVal1,
-    endVal1,
-    startVal2,
-    endVal2,
-    startVal3,
-    endVal3,
-    startVal4,
-    endVal4,
-  ]);
+  }, [isSkillsVisible]);
 
   const backgroundStyle1 = {
     background: `conic-gradient(#ff6a3d ${startVal1 * 3.6}deg, #ededed 0deg)`,
@@ -100,9 +90,6 @@ const Skills = ({translations}) => {
   const backgroundStyle3 = {
     background: `conic-gradient(#ff6a3d ${startVal3 * 3.6}deg, #ededed 0deg)`,
   };
-  // const backgroundStyle4 = {
-  //   background: `conic-gradient(#ff6a3d ${startVal4 * 3.6}deg, #ededed 0deg)`,
-  // };
   return (
     <div
       className="boxWithBAck"

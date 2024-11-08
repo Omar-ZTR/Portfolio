@@ -1,21 +1,21 @@
 import React from 'react'
 import "./footer.css"
-const Footer = () => {
+const Footer = ({translations , Myname}) => {
     return (
         <footer className="footer ">
             <div className="footer__container container">
-            <h1 className="footer__title">Omar Zouiter</h1>
+            <h1 className="footer__title">{ Myname }</h1>
                 <ul className="footer__list">
                     <li>
-                        <a href="#about" className="footer__link">About</a>
+                        <a href="#about" className="footer__link">{ translations.about }</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" className="footer__link">Project</a>
+                        <a href="#portfolio" className="footer__link">{ translations.portfolio }</a>
                     </li>
 
                     <li>
-                        <a href="#services" className="footer__link">Services</a>
+                        <a href="#services" className="footer__link">{ translations.services }</a>
                     </li>
                 </ul>
               
@@ -29,13 +29,12 @@ const Footer = () => {
                     </a>
 
 
-                    <a href="https://x.com/OmrZtr" target="_blank"
+       <a href="https://www.linkedin.com/in/omar-zouiter-a51771279/" target="_blank"
    rel="noopener noreferrer"
                         className="footer__social-link" >
-                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path fill="currentColor" d="M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5zM3 2h5v2h-5zM16 20h5v2h-5zM18.5 2h3.5L5 22h-3.5z"></path>
-</svg>
+                        <i class="bx bxl-linkedin"></i>
                     </a>
+            
                     <a href="https://github.com/Omar-ZTR" target="_blank"
    rel="noopener noreferrer"
                         className="footer__social-link">
@@ -45,7 +44,7 @@ const Footer = () => {
                 </div>
 
                 <span className="footer__copy">&#169; 2024 Omar.
-                    All rigths reserved</span>
+                 </span>
             </div>
         </footer>
     )
