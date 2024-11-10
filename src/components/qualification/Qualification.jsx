@@ -12,7 +12,7 @@ const Qualification = ({translations}) => {
 
   return (
     <div className="boxWithBAck  "  data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"  >
+    data-aos-anchor-placement="top-bottom"  >
       <section id="resume">
         <h2 className="section__title">{translations.title}</h2>
         <span className="section__subtitle">{translations.subTitle}</span>

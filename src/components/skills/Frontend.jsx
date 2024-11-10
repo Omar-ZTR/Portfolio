@@ -30,7 +30,7 @@ import jsHover from "../../asset/javascriptHover.png";
 const Frontend = ({trans}) => {
 
   const [showAllSkills, setShowAllSkills] = useState(false);
-  const [isshow, setIsshow] = useState(false);
+  
   useEffect(() => {
 
     const skillsbox = document.querySelector('.skills__box');
@@ -57,7 +57,7 @@ const Frontend = ({trans}) => {
   const [isTop, setTop] = useState(true);
   const handleToggleSkills = () => {
     setShowAllSkills(!showAllSkills);
-    setIsshow(!isshow);
+    
     setTop((prevIsTop) => !prevIsTop);
   };
   return (<>

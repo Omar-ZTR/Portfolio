@@ -21,12 +21,7 @@ const Footer = ({translations , Myname}) => {
               
                 <div className="footer__social">
                    
-                    {/* target="_blank" */}
-                    <a href="https://www.instagram.com/_____omr____/" target="_blank"
-   rel="noopener noreferrer"
-                        className="footer__social-link" >
-                        <i class="bx bxl-instagram"></i>
-                    </a>
+                   
 
 
        <a href="https://www.linkedin.com/in/omar-zouiter-a51771279/" target="_blank"

@@ -16,7 +16,7 @@ import GAG from "../../asset/giveAndget.png";
 
 function Project({translations}) {
   return (
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <section id="portfolio" className="boxWithBAck">
         <div className="container ">
           <h2 className="section__title">{translations.title}</h2>

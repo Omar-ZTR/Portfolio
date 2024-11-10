@@ -16,7 +16,7 @@ const Services = ({ darkMode,translations }) => {
       id="services"
       className="boxWithBAck"
       data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
+      data-aos-anchor-placement="top-bottom"
     >
       <div className="container ">
         <h2 className="section__title">{translations.title}</h2>

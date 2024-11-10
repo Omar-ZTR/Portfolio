@@ -368,12 +368,8 @@ z-index: 2;
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 var(--header-height) 0;
-  }
-  .switchBtn{
-    top: 1rem;
-  }
+ 
+  
   .gridd{
     margin: 1rem;
   }

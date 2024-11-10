@@ -10,7 +10,7 @@ const About = ({ translations }) => {
       className="about section"
       id="about"
       data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
+      data-aos-anchor-placement="top-bottom"
     >
       <h2 className="section__title">{translations.title}</h2>
       <span className="section__subtitle">{translations.subTitle}</span>

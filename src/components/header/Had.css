@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0 2rem;
     z-index: var(--z-fixed);
     background-color: var( --nav-color);
     backdrop-filter: blur(13px);
@@ -68,7 +69,8 @@
   @media screen and (max-width: 768px) {
 .ha   {
     top: initial;
-    bottom: 0;
+    /* bottom: 0; */
+    padding: 0.5rem 2rem;
     backdrop-filter: none;
     background-color: var(--body-color);
 }
@@ -106,7 +108,7 @@
 .nav__close {
     position: absolute;
     right: 1.3rem;
-    bottom: .5rem;
+    top: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--title-color);
@@ -115,7 +117,7 @@
 color: var(--title-color-dark);
 }
 .nav__toggle {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .nav__icon,

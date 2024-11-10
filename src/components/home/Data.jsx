@@ -88,7 +88,7 @@ const Data = ({ trans }) => {
       <p
         className="home__description"
         data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="top-bottom"
       >
        { trans.text }
       </p>
