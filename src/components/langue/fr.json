@@ -101,8 +101,8 @@
         "skil1": "Frontend",
         "skil2": "Backend",
         "skil3": "Design",
-        "show1": "Voir moins",
-        "show2": "Voir plus"
+        "show2": "Voir moins",
+        "show1": "Voir plus"
     },
     "project": {
         "title": "Portfolio",
