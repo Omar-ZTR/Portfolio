@@ -44,9 +44,9 @@ function App() {
         <button className="modeSwitch" onClick={toggleDarkMode}>
           <i className={`uil ${darkMode ? "uil-sun" : "uil-moon"}`} />
         </button>
-        <button className="langSwitch" onClick={toggleLanguage}>
-          <i className="uil  uil-globe"></i>
-       
+        <button className={`langSwitch ${language ==="en" ? "backFr" : "backEn"}`} onClick={toggleLanguage} >
+         <p> {language ==="en" ? "FR" : "EN" }
+         </p>
         </button>
       </div>
 
